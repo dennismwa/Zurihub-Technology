@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical SEO Explained: The Foundation of Google Rankings | Zurihub Technology</title>
+  <meta name="description" content="Complete technical SEO guide for 2026. Learn Core Web Vitals, schema markup, site speed optimization, indexing, crawling, mobile optimization, and how technical SEO impacts your Google rankings.">
+  <meta name="keywords" content="technical SEO guide, how technical SEO works, website technical optimization, on-page SEO checklist, Core Web Vitals, schema markup, site speed SEO, mobile SEO">
+  <link rel="canonical" href="https://zurihub.co.ke/blog/technical-seo-guide">
+  <meta name="author" content="Zurihub Technology">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://zurihub.co.ke/blog/technical-seo-guide">
+  <meta property="og:title" content="Technical SEO Explained: The Foundation of Google Rankings">
+  <meta property="og:description" content="Complete guide to technical SEO including Core Web Vitals, schema markup, and optimization strategies.">
+  <meta property="og:image" content="https://zurihub.co.ke/assets/technical-seo-guide.webp">
+  <meta property="article:published_time" content="2026-02-20T08:00:00+03:00">
+  <meta property="article:section" content="SEO">
+  
+  <link rel="icon" type="image/png" href="/assets/zurihub-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{primary:'#101F4C','primary-dark':'#0A1535',accent:'#FB5041','accent-hover':'#e8402f',light:'#F8F9FC'},fontFamily:{sans:['Inter','system-ui','sans-serif']}}}}</script>
+  <link rel="stylesheet" href="/css/styles.css">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Technical SEO Explained: The Foundation of Google Rankings",
+    "description": "Complete technical SEO guide covering Core Web Vitals, schema markup, site speed, indexing, and mobile optimization.",
+    "image": "https://zurihub.co.ke/assets/technical-seo-guide.webp",
+    "author": {"@type": "Organization", "name": "Zurihub Technology", "url": "https://zurihub.co.ke"},
+    "publisher": {"@type": "Organization", "name": "Zurihub Technology", "logo": {"@type": "ImageObject", "url": "https://zurihub.co.ke/assets/zurihub-logo.png"}},
+    "datePublished": "2026-02-20T08:00:00+03:00",
+    "dateModified": "2026-02-20T08:00:00+03:00",
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://zurihub.co.ke/blog/technical-seo-guide"},
+    "wordCount": 3400
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "What is technical SEO?", "acceptedAnswer": {"@type": "Answer", "text": "Technical SEO refers to website optimizations that help search engines crawl, index, and understand your content more effectively. It includes site speed, mobile-friendliness, security (HTTPS), URL structure, XML sitemaps, schema markup, and Core Web Vitals. Technical SEO creates the foundation that content and link building strategies build upon."}},
+      {"@type": "Question", "name": "What are Core Web Vitals and why do they matter?", "acceptedAnswer": {"@type": "Answer", "text": "Core Web Vitals are Google's metrics measuring user experience: LCP (Largest Contentful Paint) measures loading performance (target: under 2.5s), FID (First Input Delay) measures interactivity (target: under 100ms), and CLS (Cumulative Layout Shift) measures visual stability (target: under 0.1). These are official Google ranking factors since 2021."}},
+      {"@type": "Question", "name": "How does site speed affect SEO?", "acceptedAnswer": {"@type": "Answer", "text": "Site speed directly impacts SEO in multiple ways: It's a direct Google ranking factor, affects user experience (53% of mobile users leave if page takes over 3 seconds to load), impacts crawl budget (faster sites get crawled more), and influences conversion rates. Every second of delay can decrease conversions by 7%."}},
+      {"@type": "Question", "name": "What is schema markup and should I use it?", "acceptedAnswer": {"@type": "Answer", "text": "Schema markup is structured data code that helps search engines understand your content better. It enables rich snippets in search results (stars, prices, FAQs). Yes, you should use it—pages with schema have 30% higher click-through rates. Common types include Article, Product, FAQ, LocalBusiness, and Review schemas."}},
+      {"@type": "Question", "name": "How do I check if my site is indexed by Google?", "acceptedAnswer": {"@type": "Answer", "text": "Check indexing status by: 1) Site search (type 'site:yourdomain.com' in Google), 2) Google Search Console Index Coverage report, 3) URL Inspection tool in Search Console for specific pages. If pages aren't indexed, check robots.txt, meta robots tags, canonical tags, and ensure content is accessible and valuable."}},
+      {"@type": "Question", "name": "What is mobile-first indexing?", "acceptedAnswer": {"@type": "Answer", "text": "Mobile-first indexing means Google primarily uses the mobile version of your website for indexing and ranking. If your mobile site has less content than desktop, has different structured data, or lacks mobile optimization, it will negatively impact rankings. Ensure mobile and desktop versions have identical content and functionality."}}
+    ]
+  }
+  </script>
+  
+  <style>
+    .blog-content h2 { scroll-margin-top: 100px; }
+    .blog-content h3 { scroll-margin-top: 100px; }
+    .toc-link { transition: all 0.2s; }
+    .toc-link:hover { color: #FB5041; padding-left: 4px; }
+    .highlight-box { background: linear-gradient(135deg, #F8F9FC 0%, #EEF2FF 100%); border-left: 4px solid #FB5041; }
+    .warning-box { background: #FEF3C7; border-left: 4px solid #F59E0B; }
+    .pro-tip { background: #ECFDF5; border-left: 4px solid #10B981; }
+    .metric-card { background: white; border: 1px solid #E5E7EB; border-radius: 12px; padding: 20px; text-align: center; }
+    .metric-good { border-color: #22C55E; }
+    .metric-needs-improvement { border-color: #F59E0B; }
+    .metric-poor { border-color: #EF4444; }
+    .blog-content p { line-height: 1.8; }
+    .comparison-table { width: 100%; border-collapse: collapse; }
+    .comparison-table th, .comparison-table td { padding: 12px 16px; text-align: left; border-bottom: 1px solid #E5E7EB; }
+    .comparison-table th { background: #F8F9FC; font-weight: 600; color: #101F4C; }
+    .code-block { background: #1F2937; color: #F3F4F6; padding: 16px; border-radius: 8px; overflow-x: auto; font-family: monospace; font-size: 14px; }
+    .checklist-item { position: relative; padding-left: 2rem; }
+    .checklist-item::before { content: '☐'; position: absolute; left: 0; }
+    .checklist-done::before { content: '✓'; color: #22C55E; }
+  </style>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <article class="blog-article">
+    <header class="blog-hero" style="background: linear-gradient(135deg, #101F4C 0%, #1a2d5c 100%); padding: 6rem 0 4rem;">
+      <div class="max-w-[900px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="breadcrumb mb-6">
+          <a href="/" class="text-white/60 hover:text-white">Home</a>
+          <span class="text-white/40 mx-2">/</span>
+          <a href="/blog" class="text-white/60 hover:text-white">Blog</a>
+          <span class="text-white/40 mx-2">/</span>
+          <span class="text-white/80">Technical SEO Guide</span>
+        </div>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="px-3 py-1 bg-accent text-white text-xs font-semibold rounded-full">SEO GUIDE</span>
+          <span class="text-white/60 text-sm">20 min read</span>
+        </div>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-6 leading-tight">Technical SEO Explained: The Foundation of Google Rankings</h1>
+        <p class="text-xl text-white/80 mb-8 leading-relaxed">Master the technical aspects of SEO that determine whether Google can find, understand, and rank your content. This guide covers everything from Core Web Vitals to schema markup.</p>
+        <div class="flex flex-wrap items-center gap-6 text-sm text-white/60">
+          <div class="flex items-center gap-2">
+            <img src="/assets/zurihub-logo.png" alt="Zurihub Technology" class="w-8 h-8 rounded-full bg-white p-1">
+            <span>Zurihub Technology</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            <time datetime="2026-02-20">February 20, 2026</time>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Table of Contents -->
+    <div class="bg-light border-b border-gray-200">
+      <div class="max-w-[900px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <h2 class="text-lg font-bold text-primary mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
+            Table of Contents
+          </h2>
+          <nav class="grid md:grid-cols-2 gap-2 text-sm">
+            <a href="#what-is" class="toc-link text-gray-600 hover:text-accent">1. What Is Technical SEO?</a>
+            <a href="#core-web-vitals" class="toc-link text-gray-600 hover:text-accent">2. Core Web Vitals</a>
+            <a href="#site-speed" class="toc-link text-gray-600 hover:text-accent">3. Site Speed Optimization</a>
+            <a href="#mobile" class="toc-link text-gray-600 hover:text-accent">4. Mobile Optimization</a>
+            <a href="#crawling" class="toc-link text-gray-600 hover:text-accent">5. Crawling & Indexing</a>
+            <a href="#schema" class="toc-link text-gray-600 hover:text-accent">6. Schema Markup</a>
+            <a href="#url-structure" class="toc-link text-gray-600 hover:text-accent">7. URL Structure</a>
+            <a href="#security" class="toc-link text-gray-600 hover:text-accent">8. HTTPS & Security</a>
+            <a href="#on-page" class="toc-link text-gray-600 hover:text-accent">9. On-Page Technical Elements</a>
+            <a href="#tools" class="toc-link text-gray-600 hover:text-accent">10. Technical SEO Tools</a>
+            <a href="#checklist" class="toc-link text-gray-600 hover:text-accent">11. Technical SEO Checklist</a>
+            <a href="#faq" class="toc-link text-gray-600 hover:text-accent">12. FAQ</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-[900px] mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="blog-content prose prose-lg max-w-none">
+        
+        <p class="text-xl text-gray-700 leading-relaxed mb-8">Great content means nothing if Google can't find it. Technical SEO is the foundation that makes everything else possible—your blog posts, product pages, and service pages all depend on solid technical infrastructure to rank. This guide explains the technical factors that influence your search visibility and how to optimize them.</p>
+
+        <!-- Section 1 -->
+        <h2 id="what-is" class="text-2xl md:text-3xl font-bold text-primary mt-12 mb-6">1. What Is Technical SEO?</h2>
+        
+        <div class="highlight-box p-6 rounded-lg mb-8">
+          <h3 class="text-lg font-bold text-primary mb-3">Technical SEO Definition</h3>
+          <p class="text-gray-700"><strong>Technical SEO</strong> encompasses all optimizations that help search engines efficiently crawl, index, and understand your website's content. Unlike content SEO (what you write) or off-page SEO (links), technical SEO focuses on how your website is built and configured.</p>
+        </div>
+
+        <h3 class="text-xl font-bold text-primary mt-8 mb-4">Technical SEO vs Content SEO vs Off-Page SEO</h3>
+        <div class="overflow-x-auto mb-8">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>Focus</th>
+                <th>Examples</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Technical SEO</strong></td>
+                <td>Website infrastructure</td>
+                <td>Site speed, mobile-friendliness, schema, crawlability</td>
+              </tr>
+              <tr>
+                <td><strong>Content SEO</strong></td>
+                <td>Content quality & relevance</td>
+                <td>Keywords, content structure, E-E-A-T</td>
+              </tr>
+              <tr>
+                <td><strong>Off-Page SEO</strong></td>
+                <td>External signals</td>
+                <td>Backlinks, brand mentions, social signals</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="text-xl font-bold text-primary mt-8 mb-4">Why Technical SEO Matters</h3>
+        <ul class="space-y-3 text-gray-600 mb-8">
+          <li><strong>Crawlability:</strong> If Google can't crawl your pages, they won't appear in search results</li>
+          <li><strong>Indexability:</strong> Crawled pages must be indexed to be ranked</li>
+          <li><strong>User Experience:</strong> Technical factors like speed directly affect rankings</li>
+          <li><strong>Competitive Edge:</strong> Technical excellence differentiates you from competitors</li>
+        </ul>
+
+        <!-- Section 2 -->
+        <h2 id="core-web-vitals" class="text-2xl md:text-3xl font-bold text-primary mt-12 mb-6">2. Core Web Vitals: Google's UX Metrics</h2>
+        
+        <p class="text-gray-600 mb-6">Core Web Vitals are Google's official metrics measuring user experience. They became a ranking factor in 2021 and continue to grow in importance.</p>
+
+        <div class="grid md:grid-cols-3 gap-4 mb-8">
+          <div class="metric-card metric-good">
+            <h4 class="font-bold text-primary mb-2">LCP</h4>
+            <p class="text-sm text-gray-600 mb-2">Largest Contentful Paint</p>
+            <div class="text-3xl font-bold text-green-600 mb-2">&lt;2.5s</div>
+            <p class="text-xs text-gray-500">Measures loading performance</p>
+          </div>
+          <div class="metric-card metric-good">
+            <h4 class="font-bold text-primary mb-2">FID/INP</h4>
+            <p class="text-sm text-gray-600 mb-2">Interaction to Next Paint</p>
+            <div class="text-3xl font-bold text-green-600 mb-2">&lt;200ms</div>
+            <p class="text-xs text-gray-500">Measures interactivity</p>
+          </div>
+          <div class="metric-card metric-good">
+            <h4 class="font-bold text-primary mb-2">CLS</h4>
+            <p class="text-sm text-gray-600 mb-2">Cumulative Layout Shift</p>
+            <div class="text-3xl font-bold text-green-600 mb-2">&lt;0.1</div>
+            <p class="text-xs text-gray-500">Measures visual stability</p>
+          </div>
+        </div>
+
+        <h3 class="text-xl font-bold text-primary mt-8 mb-4">How to Improve Core Web Vitals</h3>
+
+        <h4 class="font-semibold text-primary mt-6 mb-3">Improving LCP (Loading)</h4>
+        <ul class="space-y-2 text-gray-600 mb-6">
+          <li>• Optimize and compress images (use WebP format)</li>
+          <li>• Use a CDN for static assets</li>
+          <li>• Preload critical resources</li>
+          <li>• Remove render-blocking JavaScript</li>
+          <li>• Upgrade hosting for faster server response</li>
+        </ul>
+
+        <h4 class="font-semibold text-primary mt-6 mb-3">Improving INP (Interactivity)</h4>
+        <ul class="space-y-2 text-gray-600 mb-6">
+          <li>• Minimize JavaScript execution time</li>
+          <li>• Break up long tasks</li>
+          <li>• Use web workers for heavy computations</li>
+          <li>• Optimize event handlers</li>
+        </ul>
+
+        <h4 class="font-semibold text-primary mt-6 mb-3">Improving CLS (Visual Stability)</h4>
+        <ul class="space-y-2 text-gray-600 mb-8">
+          <li>• Set explicit dimensions for images and videos</li>
+          <li>• Reserve space for ads and embeds</li>
+          <li>• Load fonts properly to avoid FOIT/FOUT</li>
+          <li>• Avoid inserting content above existing content</li>
+        </ul>
+
+        <!-- Section 3 -->
+        <h2 id="site-speed" class="text-2xl md:text-3xl font-bold text-primary mt-12 mb-6">3. Site Speed Optimization</h2>
+        
+        <p class="text-gray-600 mb-6">Site speed is a direct ranking factor and dramatically affects user experience. 53% of mobile visitors leave pages that take longer than 3 seconds to load.</p>
+
+        <div class="highlight-box p-6 rounded-lg mb-8">
+          <h4 class="font-bold text-primary mb-3">Speed Impact on Business</h4>
+          <ul class="space-y-2 text-gray-700">
+            <li>• 1 second delay = 7% reduction in conversions</li>
+            <li>• 40% of users abandon sites that take >3 seconds</li>
+            <li>• Amazon found every 100ms delay cost 1% in sales</li>
+          </ul>
+        </div>
+
+        <h3 class="text-xl font-bold text-primary mt-8 mb-4">Speed Optimization Techniques</h3>
+
+        <h4 class="font-semibold text-primary mt-6 mb-3">Image Optimization</h4>
+        <ul class="space-y-2 text-gray-600 mb-6">
+          <li>• Use modern formats (WebP, AVIF) with fallbacks</li>
+          <li>• Implement lazy loading for below-fold images</li>
+          <li>• Use responsive images (srcset attribute)</li>
+          <li>• Compress images without visible quality loss</li>
+          <li>• Use appropriate dimensions (don't scale down in browser)</li>
+        </ul>
+
+        <h4 class="font-semibold text-primary mt-6 mb-3">Code Optimization</h4>
+        <ul class="space-y-2 text-gray-600 mb-6">
+          <li>• Minify CSS, JavaScript, and HTML</li>
+          <li>• Remove unused CSS and JavaScript</li>
+          <li>• Defer non-critical JavaScript</li>
+          <li>• Use CSS containment for complex layouts</li>
+        </ul>
+
+        <h4 class="font-semibold text-primary mt-6 mb-3">Server & Caching</h4>
+        <ul class="space-y-2 text-gray-600 mb-8">
+          <li>• Enable browser caching with proper headers</li>
+          <li>• Use a CDN for global content delivery</li>
+          <li>• Enable GZIP or Brotli compression</li>
+          <li>• Optimize database queries</li>
+          <li>• Use server-side caching (Redis, Memcached)</li>
+        </ul>
+
+        <!-- Section 4 -->
+        <h2 id="mobile" class="text-2xl md:text-3xl font-bold text-primary mt-12 mb-6">4. Mobile Optimization & Mobile-First Indexing</h2>
+        
+        <p class="text-gray-600 mb-6">Google uses mobile-first indexing, meaning it primarily uses the mobile version of your content for ranking. If your mobile site is inferior, your rankings suffer.</p>
+
+        <h3 class="text-xl font-bold text-primary mt-8 mb-4">Mobile-First Best Practices</h3>
+        <ul class="space-y-3 text-gray-600 mb-6">
+          <li><strong>Responsive Design:</strong> Single codebase that adapts to all screen sizes</li>
+          <li><strong>Same Content:</strong> Mobile and desktop should have identical content</li>
+          <li><strong>Same Structured Data:</strong> Schema markup must be on mobile version</li>
+          <li><strong>Same Meta Tags:</strong> Titles and descriptions must match</li>
+          <li><strong>Touch-Friendly:</strong> Buttons at least 48px, adequate spacing</li>
+        </ul>
+
+        <h3 class="text-xl font-bold text-primary mt-8 mb-4">Testing Mobile Friendliness</h3>
+        <ul class="space-y-2 text-gray-600 mb-8">
+          <li>• Google's Mobile-Friendly Test tool</li>
+          <li>• Google Search Console Mobile Usability report</li>
+          <li>• Chrome DevTools device emulation</li>
+          <li>• Real device testing</li>
+        </ul>
+
+        <!-- Section 5 -->
+        <h2 id="crawling" class="text-2xl md:text-3xl font-bold text-primary mt-12 mb-6">5. Crawling and Indexing</h2>
+        
+        <p class="text-gray-600 mb-6">Understanding how Google discovers and processes your pages is fundamental to technical SEO.</p>
+
+        <h3 class="text-xl font-bold text-primary mt-8 mb-4">The Crawling Process</h3>
+        <div class="space-y-4 mb-8">
+          <div class="flex gap-4">
+            <div class="w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center font-bold text-sm flex-shrink-0">1</div>
+            <div>
+              <h4 class="font-semibold text-primary">Discovery</h4>
+              <p class="text-gray-600 text-sm">Google discovers URLs via links, sitemaps, and direct submissions</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center font-bold text-sm flex-shrink-0">2</div>
+            <div>
+              <h4 class="font-semibold text-primary">Crawling</h4>
+              <p class="text-gray-600 text-sm">Googlebot visits and downloads pages, following links</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center font-bold text-sm flex-shrink-0">3</div>
+            <div>
+              <h4 class="font-semibold text-primary">Processing</h4>
+              <p class="text-gray-600 text-sm">Google renders JavaScript and extracts content</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center font-bold text-sm flex-shrink-0">4</div>
+            <div>
+              <h4 class="font-semibold text-primary">Indexing</h4>
+              <p class="text-gray-600 text-sm">Content is analyzed and added to Google's index</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="text-xl font-bold text-primary mt-8 mb-4">Robots.txt</h3>
+        <p class="text-gray-600 mb-4">Controls which pages crawlers can access:</p>
+        <div class="code-block mb-6">
+# Example robots.txt<br>
+User-agent: *<br>
+Allow: /<br>
+Disallow: /admin/<br>
+Disallow: /private/<br>
+<br>
+Sitemap: https://example.com/sitemap.xml
+        </div>
+
+        <h3 class="text-xl font-bold text-primary mt-8 mb-4">XML Sitemaps</h3>
+        <p class="text-gray-600 mb-4">Help search engines discover all your pages:</p>
+        <ul class="space-y-2 text-gray-600 mb-6">
+          <li>• Include all important pages you want indexed</li>
+          <li>• Update lastmod dates when content changes</li>
+          <li>• Submit to Google Search Console</li>
+          <li>• Keep under 50,000 URLs per sitemap</li>
+        </ul>
+
+        <h3 class="text-xl font-bold text-primary mt-8 mb-4">Meta Robots Tags</h3>
+        <p class="text-gray-600 mb-4">Control indexing at page level:</p>
+        <div class="code-block mb-8">
+&lt;!-- Allow indexing (default) --&gt;<br>
+&lt;meta name="robots" content="index, follow"&gt;<br>
+<br>
+&lt;!-- Prevent indexing --&gt;<br>
+&lt;meta name="robots" content="noindex, nofollow"&gt;<br>
+<br>
+&lt;!-- Index but don't follow links --&gt;<br>
+&lt;meta name="robots" content="index, nofollow"&gt;
+        </div>
+
+        <!-- Section 6 -->
+        <h2 id="schema" class="text-2xl md:text-3xl font-bold text-primary mt-12 mb-6">6. Schema Markup: Structured Data</h2>
+        
+        <p class="text-gray-600 mb-6">Schema markup helps search engines understand your content and enables rich results in SERPs. Pages with rich snippets see up to 30% higher click-through rates.</p>
+
+        <h3 class="text-xl font-bold text-primary mt-8 mb-4">Common Schema Types</h3>
+        <ul class="space-y-3 text-gray-600 mb-6">
+          <li><strong>Article:</strong> For blog posts and news articles</li>
+          <li><strong>Product:</strong> For ecommerce products (shows price, availability, reviews)</li>
+          <li><strong>FAQ:</strong> For FAQ pages (expandable answers in search results)</li>
+          <li><strong>LocalBusiness:</strong> For local businesses (shows hours, address, phone)</li>
+          <li><strong>Review:</strong> For reviews (shows star ratings)</li>
+          <li><strong>HowTo:</strong> For instructional content (shows steps)</li>
+          <li><strong>BreadcrumbList:</strong> For navigation breadcrumbs</li>
+        </ul>
+
+        <h3 class="text-xl font-bold text-primary mt-8 mb-4">FAQ Schema Example</h3>
+        <div class="code-block mb-8">
+&lt;script type="application/ld+json"&gt;<br>
+{<br>
+&nbsp;&nbsp;"@context": "https://schema.org",<br>
+&nbsp;&nbsp;"@type": "FAQPage",<br>
+&nbsp;&nbsp;"mainEntity": [{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"@type": "Question",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"name": "What is technical SEO?",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"acceptedAnswer": {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"@type": "Answer",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"text": "Technical SEO refers to..."<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;}]<br>
+}<br>
+&lt;/script&gt;
+        </div>
+
+        <div class="pro-tip p-6 rounded-lg mb-8">
+          <h4 class="font-bold text-green-800 mb-2">💡 Schema Testing</h4>
+          <p class="text-green-700">Always validate schema markup using Google's Rich Results Test before publishing. Invalid schema won't generate rich results and may confuse search engines. Test at: <a href="https://search.google.com/test/rich-results" class="text-green-800 font-medium hover:underline">search.google.com/test/rich-results</a></p>
+        </div>
+
+        <!-- Section 7 -->
+        <h2 id="url-structure" class="text-2xl md:text-3xl font-bold text-primary mt-12 mb-6">7. URL Structure Best Practices</h2>
+        
+        <h3 class="text-xl font-bold text-primary mt-8 mb-4">URL Guidelines</h3>
+        <ul class="space-y-3 text-gray-600 mb-6">
+          <li><strong>Keep URLs Short:</strong> Under 60 characters when possible</li>
+          <li><strong>Use Hyphens:</strong> Separate words with hyphens, not underscores</li>
+          <li><strong>Include Keywords:</strong> Descriptive URLs that include target keywords</li>
+          <li><strong>Avoid Parameters:</strong> When possible, use clean URLs without ?id=123</li>
+          <li><strong>Use Lowercase:</strong> Consistent lowercase to avoid duplicates</li>
+          <li><strong>Logical Hierarchy:</strong> example.com/category/subcategory/page</li>
+        </ul>
+
+        <h3 class="text-xl font-bold text-primary mt-8 mb-4">URL Examples</h3>
+        <div class="overflow-x-auto mb-8">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Bad URL</th>
+                <th>Good URL</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-red-600">example.com/p?id=12345</td>
+                <td class="text-green-600">example.com/services/web-development</td>
+              </tr>
+              <tr>
+                <td class="text-red-600">example.com/blog/2026_02_20_technical_seo</td>
+                <td class="text-green-600">example.com/blog/technical-seo-guide</td>
+              </tr>
+              <tr>
+                <td class="text-red-600">example.com/Services/Web-Development</td>
+                <td class="text-green-600">example.com/services/web-development</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="text-xl font-bold text-primary mt-8 mb-4">Canonical Tags</h3>
+        <p class="text-gray-600 mb-4">Indicate the preferred version when duplicate content exists:</p>
+        <div class="code-block mb-8">
+&lt;link rel="canonical" href="https://example.com/page" /&gt;
+        </div>
+
+        <!-- Section 8 -->
+        <h2 id="security" class="text-2xl md:text-3xl font-bold text-primary mt-12 mb-6">8. HTTPS and Security</h2>
+        
+        <p class="text-gray-600 mb-6">HTTPS is a confirmed Google ranking factor. Beyond SEO, it's essential for user trust and data protection.</p>
+
+        <h3 class="text-xl font-bold text-primary mt-8 mb-4">HTTPS Implementation</h3>
+        <ul class="space-y-2 text-gray-600 mb-6">
+          <li>• Install SSL/TLS certificate (Let's Encrypt is free)</li>
+          <li>• 301 redirect all HTTP to HTTPS</li>
+          <li>• Update internal links to HTTPS</li>
+          <li>• Update sitemap to HTTPS URLs</li>
+          <li>• Check for mixed content warnings</li>
+        </ul>
+
+        <h3 class="text-xl font-bold text-primary mt-8 mb-4">Security Headers</h3>
+        <ul class="space-y-2 text-gray-600 mb-8">
+          <li>• Content-Security-Policy (CSP)</li>
+          <li>• X-Content-Type-Options: nosniff</li>
+          <li>• X-Frame-Options: DENY</li>
+          <li>• Strict-Transport-Security (HSTS)</li>
+        </ul>
+
+        <!-- Section 9 -->
+        <h2 id="on-page" class="text-2xl md:text-3xl font-bold text-primary mt-12 mb-6">9. On-Page Technical Elements</h2>
+        
+        <h3 class="text-xl font-bold text-primary mt-8 mb-4">Title Tags</h3>
+        <ul class="space-y-2 text-gray-600 mb-6">
+          <li>• Unique for every page</li>
+          <li>• 50-60 characters (to avoid truncation)</li>
+          <li>• Primary keyword near the beginning</li>
+          <li>• Include brand name (usually at end)</li>
+        </ul>
+
+        <h3 class="text-xl font-bold text-primary mt-8 mb-4">Meta Descriptions</h3>
+        <ul class="space-y-2 text-gray-600 mb-6">
+          <li>• 150-160 characters</li>
+          <li>• Compelling and action-oriented</li>
+          <li>• Include target keyword naturally</li>
+          <li>• Unique for every page</li>
+        </ul>
+
+        <h3 class="text-xl font-bold text-primary mt-8 mb-4">Heading Structure</h3>
+        <ul class="space-y-2 text-gray-600 mb-6">
+          <li>• One H1 per page (usually the title)</li>
+          <li>• Logical hierarchy: H1 → H2 → H3 → H4</li>
+          <li>• Include keywords in headings naturally</li>
+          <li>• Use headings for structure, not styling</li>
+        </ul>
+
+        <h3 class="text-xl font-bold text-primary mt-8 mb-4">Image Optimization</h3>
+        <ul class="space-y-2 text-gray-600 mb-8">
+          <li>• Descriptive file names (blue-widget.jpg, not IMG_12345.jpg)</li>
+          <li>• Meaningful alt text for accessibility and SEO</li>
+          <li>• Compress without quality loss</li>
+          <li>• Use appropriate formats (WebP for photos, SVG for icons)</li>
+        </ul>
+
+        <!-- Section 10 -->
+        <h2 id="tools" class="text-2xl md:text-3xl font-bold text-primary mt-12 mb-6">10. Essential Technical SEO Tools</h2>
+        
+        <h3 class="text-xl font-bold text-primary mt-8 mb-4">Free Tools</h3>
+        <ul class="space-y-3 text-gray-600 mb-6">
+          <li><strong>Google Search Console:</strong> Essential for monitoring indexing, performance, and issues</li>
+          <li><strong>Google PageSpeed Insights:</strong> Core Web Vitals testing</li>
+          <li><strong>Google Mobile-Friendly Test:</strong> Mobile optimization check</li>
+          <li><strong>Google Rich Results Test:</strong> Schema validation</li>
+          <li><strong>Chrome DevTools:</strong> Performance analysis and debugging</li>
+        </ul>
+
+        <h3 class="text-xl font-bold text-primary mt-8 mb-4">Paid Tools</h3>
+        <ul class="space-y-3 text-gray-600 mb-8">
+          <li><strong>Screaming Frog:</strong> Comprehensive site crawling and auditing</li>
+          <li><strong>Ahrefs/Semrush:</strong> Technical audits plus backlink and keyword analysis</li>
+          <li><strong>Sitebulb:</strong> Visual site auditing with prioritized recommendations</li>
+        </ul>
+
+        <!-- Section 11 -->
+        <h2 id="checklist" class="text-2xl md:text-3xl font-bold text-primary mt-12 mb-6">11. Technical SEO Checklist</h2>
+        
+        <div class="bg-white border-2 border-gray-200 rounded-xl p-8 mb-8">
+          <h3 class="text-xl font-bold text-primary mb-6">Complete Technical SEO Audit Checklist</h3>
+          
+          <h4 class="font-semibold text-primary mb-3">Core Web Vitals & Speed</h4>
+          <ul class="space-y-2 text-gray-600 mb-6 text-sm">
+            <li class="checklist-item">LCP under 2.5 seconds</li>
+            <li class="checklist-item">INP under 200ms</li>
+            <li class="checklist-item">CLS under 0.1</li>
+            <li class="checklist-item">Images optimized and lazy loaded</li>
+            <li class="checklist-item">CSS/JS minified</li>
+            <li class="checklist-item">CDN implemented</li>
+          </ul>
+
+          <h4 class="font-semibold text-primary mb-3">Crawling & Indexing</h4>
+          <ul class="space-y-2 text-gray-600 mb-6 text-sm">
+            <li class="checklist-item">Robots.txt properly configured</li>
+            <li class="checklist-item">XML sitemap created and submitted</li>
+            <li class="checklist-item">No unintentional noindex tags</li>
+            <li class="checklist-item">Canonical tags implemented</li>
+            <li class="checklist-item">No crawl errors in Search Console</li>
+          </ul>
+
+          <h4 class="font-semibold text-primary mb-3">Mobile & Security</h4>
+          <ul class="space-y-2 text-gray-600 mb-6 text-sm">
+            <li class="checklist-item">Mobile-responsive design</li>
+            <li class="checklist-item">HTTPS enabled across all pages</li>
+            <li class="checklist-item">No mixed content warnings</li>
+            <li class="checklist-item">Touch-friendly elements</li>
+          </ul>
+
+          <h4 class="font-semibold text-primary mb-3">On-Page Elements</h4>
+          <ul class="space-y-2 text-gray-600 text-sm">
+            <li class="checklist-item">Unique title tags on all pages</li>
+            <li class="checklist-item">Meta descriptions written</li>
+            <li class="checklist-item">Proper heading hierarchy</li>
+            <li class="checklist-item">Alt text on images</li>
+            <li class="checklist-item">Schema markup implemented</li>
+            <li class="checklist-item">Internal linking structure</li>
+          </ul>
+        </div>
+
+        <!-- FAQ Section -->
+        <h2 id="faq" class="text-2xl md:text-3xl font-bold text-primary mt-12 mb-6">12. Frequently Asked Questions</h2>
+        
+        <div class="space-y-6 mb-12">
+          <div class="border border-gray-200 rounded-lg p-6">
+            <h3 class="font-bold text-primary mb-3">What is technical SEO?</h3>
+            <p class="text-gray-600">Technical SEO refers to website optimizations that help search engines crawl, index, and understand your content. It includes site speed, mobile-friendliness, security (HTTPS), URL structure, XML sitemaps, and schema markup—the foundation that content and links build upon.</p>
+          </div>
+          
+          <div class="border border-gray-200 rounded-lg p-6">
+            <h3 class="font-bold text-primary mb-3">What are Core Web Vitals and why do they matter?</h3>
+            <p class="text-gray-600">Core Web Vitals are Google's metrics measuring user experience: LCP (loading under 2.5s), INP (interactivity under 200ms), and CLS (visual stability under 0.1). They're official ranking factors that directly impact your search visibility.</p>
+          </div>
+          
+          <div class="border border-gray-200 rounded-lg p-6">
+            <h3 class="font-bold text-primary mb-3">How does site speed affect SEO?</h3>
+            <p class="text-gray-600">Site speed is a direct Google ranking factor. It affects user experience (53% leave if loading takes over 3 seconds), crawl budget, and conversions. Every second of delay decreases conversions by approximately 7%.</p>
+          </div>
+          
+          <div class="border border-gray-200 rounded-lg p-6">
+            <h3 class="font-bold text-primary mb-3">What is schema markup and should I use it?</h3>
+            <p class="text-gray-600">Schema markup is structured data code that helps search engines understand content and enables rich snippets (stars, FAQs, prices). Pages with schema see 30% higher click-through rates. Yes, you should use it—it's essential for modern SEO.</p>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="bg-primary text-white rounded-2xl p-8 md:p-12 mb-8">
+          <h2 class="text-2xl md:text-3xl font-bold mb-4">Need Help with Technical SEO?</h2>
+          <p class="text-white/80 mb-6 text-lg">Technical SEO can be complex. Whether you need a comprehensive audit, Core Web Vitals optimization, or ongoing technical support, our team can help improve your search visibility.</p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="/quotation" class="btn btn-primary btn-lg text-center">Get a Free SEO Audit</a>
+            <a href="/seo-services" class="btn btn-outline btn-lg text-center border-white text-white hover:bg-white hover:text-primary">Our SEO Services</a>
+          </div>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="border-t border-gray-200 pt-8">
+          <h3 class="text-xl font-bold text-primary mb-6">Related Articles</h3>
+          <div class="grid md:grid-cols-2 gap-6">
+            <a href="/blog/ecommerce-development-guide" class="group block p-4 border border-gray-200 rounded-lg hover:border-accent transition">
+              <h4 class="font-semibold text-primary group-hover:text-accent transition mb-2">Complete Ecommerce Development Guide</h4>
+              <p class="text-sm text-gray-600">Learn how to build an SEO-optimized online store.</p>
+            </a>
+            <a href="/blog/ultimate-guide-choosing-web-development-company" class="group block p-4 border border-gray-200 rounded-lg hover:border-accent transition">
+              <h4 class="font-semibold text-primary group-hover:text-accent transition mb-2">Choosing a Web Development Company</h4>
+              <p class="text-sm text-gray-600">Find a partner who understands technical SEO.</p>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </article>
+
+  <div id="footer-placeholder"></div>
+  <div id="whatsapp-placeholder"></div>
+  <div id="back-to-top-placeholder"></div>
+  <script src="/js/components.js"></script>
+  <script src="/js/main.js"></script>
+  <script>initComponents('blog');</script>
+</body>
+</html>
