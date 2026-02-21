@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>Zurihub Technology</ShortName>
+  <Description>Search web development, software, SEO services and blog articles on Zurihub Technology</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Url type="text/html" method="get"
+       template="https://zurihub.co.ke/blog?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml"
+       rel="self"
+       template="https://zurihub.co.ke/opensearch.xml"/>
+  <Image height="16" width="16" type="image/png">https://zurihub.co.ke/assets/zurihub-logo.png</Image>
+  <Image height="64" width="64" type="image/png">https://zurihub.co.ke/assets/zurihub-logo.png</Image>
+  <moz:SearchForm>https://zurihub.co.ke/blog</moz:SearchForm>
+  <Language>en-us</Language>
+  <OutputEncoding>UTF-8</OutputEncoding>
+</OpenSearchDescription>

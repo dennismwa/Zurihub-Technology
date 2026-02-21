@@ -1,0 +1,80 @@
+# Zurihub Technology - Netlify Redirects
+# This enables clean URLs without .html extensions
+
+/about              /about.html             200
+/mission-vision     /mission-vision.html    200
+/faq                /faq.html               200
+/testimonials       /testimonials.html      200
+/services           /services.html          200
+/web-development    /web-development.html   200
+/software-development  /software-development.html  200
+/seo-services       /seo-services.html      200
+/digital-marketing  /digital-marketing.html 200
+/ecommerce-development  /ecommerce-development.html  200
+/shopify-development    /shopify-development.html    200
+/wordpress-development  /wordpress-development.html  200
+/website-maintenance    /website-maintenance.html    200
+/crm-system         /crm-system.html        200
+/pos-system         /pos-system.html        200
+/erp-system         /erp-system.html        200
+/lms-system         /lms-system.html        200
+/gate-management-system     /gate-management-system.html    200
+/property-management-system /property-management-system.html 200
+/banking-loan-system        /banking-loan-system.html       200
+/hotel-restaurant-system    /hotel-restaurant-system.html   200
+/supermarket-pos-system     /supermarket-pos-system.html    200
+/manufacturing-management-system  /manufacturing-management-system.html  200
+/law-firm-crm       /law-firm-crm.html      200
+/real-estate-crm    /real-estate-crm.html   200
+/portfolio          /portfolio.html         200
+/blog               /blog.html              200
+/contact            /contact.html           200
+/quotation          /quotation.html         200
+/career             /career.html            200
+/feedback           /feedback.html          200
+/getting-started    /getting-started.html   200
+/pricing            /pricing.html           200
+/privacy-policy     /privacy-policy.html    200
+/terms-and-conditions  /terms-and-conditions.html  200
+
+# Location SEO Pages - Kenya
+/web-development-kenya     /web-development-kenya.html     200
+/web-development-nairobi   /web-development-nairobi.html   200
+/web-development-mombasa   /web-development-mombasa.html   200
+/web-development-nakuru    /web-development-nakuru.html    200
+/web-development-eldoret   /web-development-eldoret.html   200
+/web-development-ruiru     /web-development-ruiru.html     200
+/seo-services-nairobi      /seo-services-nairobi.html      200
+/software-development-kenya  /software-development-kenya.html  200
+/ecommerce-development-kenya  /ecommerce-development-kenya.html  200
+
+# Location SEO Pages - International
+/web-development-usa       /web-development-usa.html       200
+
+# Blog posts
+/blog/what-is-seo                               /blog/what-is-seo.html                              200
+/blog/how-crm-systems-improve-operations        /blog/how-crm-systems-improve-operations.html       200
+/blog/erp-benefits-for-business                 /blog/erp-benefits-for-business.html                200
+/blog/pos-importance-retail-business            /blog/pos-importance-retail-business.html           200
+/blog/ecommerce-guide                           /blog/ecommerce-guide.html                          200
+/blog/shopify-vs-custom-website                 /blog/shopify-vs-custom-website.html                200
+/blog/digital-marketing-strategy               /blog/digital-marketing-strategy.html               200
+/blog/website-maintenance-importance            /blog/website-maintenance-importance.html           200
+/blog/custom-software-development-explained     /blog/custom-software-development-explained.html    200
+/blog/ai-business-automation                    /blog/ai-business-automation.html                   200
+/blog/technical-seo-guide                       /blog/technical-seo-guide.html                      200
+/blog/how-to-choose-web-development-company     /blog/how-to-choose-web-development-company.html    200
+/blog/cost-of-software-development              /blog/cost-of-software-development.html             200
+/blog/signs-business-needs-crm                  /blog/signs-business-needs-crm.html                 200
+/blog/ultimate-guide-choosing-web-development-company  /blog/ultimate-guide-choosing-web-development-company.html  200
+/blog/custom-software-development-cost-guide   /blog/custom-software-development-cost-guide.html   200
+/blog/crm-systems-guide                        /blog/crm-systems-guide.html                        200
+/blog/erp-systems-guide                        /blog/erp-systems-guide.html                        200
+/blog/ecommerce-development-guide               /blog/ecommerce-development-guide.html             200
+/blog/pos-systems-guide                         /blog/pos-systems-guide.html                        200
+/blog/ai-business-automation-guide              /blog/ai-business-automation-guide.html             200
+/blog/website-maintenance-guide                 /blog/website-maintenance-guide.html                200
+/blog/digital-transformation-strategy           /blog/digital-transformation-strategy.html          200
+
+# 404 Error Page
+/*    /404.html   404

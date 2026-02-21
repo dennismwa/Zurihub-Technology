@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Share Your Feedback | Zurihub Technology</title>
+  <meta name="description" content="Share your experience with Zurihub Technology. Your feedback helps us improve our web development, software, and digital marketing services for every client.">
+  <link rel="canonical" href="https://zurihub.co.ke/feedback">
+  <link rel="icon" type="image/png" href="/assets/zurihub-logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zurihub.co.ke/feedback">
+  <meta property="og:title" content="Share Your Feedback | Zurihub Technology">
+  <meta property="og:description" content="Share your experience with Zurihub Technology. Your feedback helps us improve our web development, software, and digital marketing services.">
+  <meta property="og:image" content="https://zurihub.co.ke/assets/zurihub-logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Share Your Feedback | Zurihub Technology">
+  <meta name="twitter:description" content="Share your experience with Zurihub Technology. Your feedback helps us improve our services for every client.">
+  <meta name="twitter:image" content="https://zurihub.co.ke/assets/zurihub-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { primary: '#101F4C', 'primary-dark': '#0A1535', accent: '#FB5041', 'accent-hover': '#e8402f', light: '#F8F9FC' }, fontFamily: { sans: ['Inter','system-ui','sans-serif'] }, borderRadius: { card: '8px', btn: '6px' } } }
+    }
+  </script>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Share Your Feedback - Zurihub Technology",
+    "description": "Share your experience working with Zurihub Technology and help us improve our digital solutions.",
+    "url": "https://zurihub.co.ke/feedback",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Zurihub Technology",
+      "url": "https://zurihub.co.ke",
+      "logo": "https://zurihub.co.ke/assets/zurihub-logo.png"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <!-- Page Hero -->
+  <section class="page-hero" aria-labelledby="feedback-heading">
+    <div class="hero-pattern"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <nav class="breadcrumb mb-6" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span class="separator">/</span>
+        <span class="current">Feedback</span>
+      </nav>
+      <h1 id="feedback-heading">We Value Your <span class="text-accent">Feedback</span></h1>
+      <p>Your honest feedback is the foundation of our growth. Help us understand what we're doing right and where we can improve to serve you better.</p>
+    </div>
+  </section>
+
+  <!-- Feedback Form -->
+  <section class="section-lg" aria-labelledby="feedback-form-heading">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10 reveal">
+        <span class="section-label">Your Experience</span>
+        <h2 id="feedback-form-heading" class="section-title">Share Your Experience</h2>
+        <p class="section-subtitle mx-auto">Take a few minutes to let us know how we did. Every response is reviewed by our leadership team.</p>
+      </div>
+
+      <form id="feedbackForm" class="bg-white rounded-card border border-gray-200 p-6 sm:p-10 reveal" aria-label="Feedback form" novalidate>
+        <div class="grid sm:grid-cols-2 gap-x-6">
+          <div class="form-group">
+            <label for="fbName" class="form-label">Your Name <span class="text-accent">*</span></label>
+            <input type="text" id="fbName" name="name" class="form-input" placeholder="John Doe" required aria-required="true">
+          </div>
+          <div class="form-group">
+            <label for="fbEmail" class="form-label">Email Address <span class="text-accent">*</span></label>
+            <input type="email" id="fbEmail" name="email" class="form-input" placeholder="john@example.com" required aria-required="true">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="fbService" class="form-label">Service Used <span class="text-accent">*</span></label>
+          <select id="fbService" name="service" class="form-select" required aria-required="true">
+            <option value="" disabled selected>Select the service you used</option>
+            <option value="web-development">Web Development</option>
+            <option value="software-development">Software Development</option>
+            <option value="seo-services">SEO Services</option>
+            <option value="digital-marketing">Digital Marketing</option>
+            <option value="ecommerce">Ecommerce Development</option>
+            <option value="shopify">Shopify Development</option>
+            <option value="wordpress">WordPress Development</option>
+            <option value="crm-system">CRM System</option>
+            <option value="pos-system">POS System</option>
+            <option value="erp-system">ERP System</option>
+            <option value="website-maintenance">Website Maintenance</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <!-- Star Rating -->
+        <div class="form-group">
+          <label class="form-label">Overall Rating <span class="text-accent">*</span></label>
+          <div class="flex items-center gap-1 mt-1" id="starRating" role="radiogroup" aria-label="Rate your experience from 1 to 5 stars">
+            <button type="button" class="star-btn p-1 transition-transform hover:scale-110 focus:outline-none" data-value="1" aria-label="1 star">
+              <svg class="w-9 h-9 star-icon text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </button>
+            <button type="button" class="star-btn p-1 transition-transform hover:scale-110 focus:outline-none" data-value="2" aria-label="2 stars">
+              <svg class="w-9 h-9 star-icon text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </button>
+            <button type="button" class="star-btn p-1 transition-transform hover:scale-110 focus:outline-none" data-value="3" aria-label="3 stars">
+              <svg class="w-9 h-9 star-icon text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </button>
+            <button type="button" class="star-btn p-1 transition-transform hover:scale-110 focus:outline-none" data-value="4" aria-label="4 stars">
+              <svg class="w-9 h-9 star-icon text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </button>
+            <button type="button" class="star-btn p-1 transition-transform hover:scale-110 focus:outline-none" data-value="5" aria-label="5 stars">
+              <svg class="w-9 h-9 star-icon text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </button>
+            <span class="ml-3 text-sm font-medium text-gray-400" id="ratingText">Select a rating</span>
+          </div>
+          <input type="hidden" id="ratingValue" name="rating" value="" required>
+        </div>
+
+        <div class="form-group">
+          <label for="fbPositive" class="form-label">What went well? <span class="text-accent">*</span></label>
+          <textarea id="fbPositive" name="positive" class="form-textarea" rows="4" placeholder="Tell us what you liked most about working with us — the process, communication, results..." required aria-required="true"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="fbImprove" class="form-label">What could we improve?</label>
+          <textarea id="fbImprove" name="improve" class="form-textarea" rows="4" placeholder="Honest constructive feedback helps us grow. What could have been better?"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Would you recommend Zurihub to others? <span class="text-accent">*</span></label>
+          <div class="flex gap-4 mt-2">
+            <label class="flex items-center gap-3 p-4 rounded-card border border-gray-200 cursor-pointer hover:border-accent hover:bg-accent/5 transition flex-1 group">
+              <input type="radio" name="recommend" value="yes" class="w-5 h-5 accent-accent" required>
+              <div>
+                <span class="text-sm font-semibold text-gray-700 group-hover:text-primary block">Yes, absolutely</span>
+                <span class="text-xs text-gray-400">I'd recommend Zurihub</span>
+              </div>
+            </label>
+            <label class="flex items-center gap-3 p-4 rounded-card border border-gray-200 cursor-pointer hover:border-accent hover:bg-accent/5 transition flex-1 group">
+              <input type="radio" name="recommend" value="no" class="w-5 h-5 accent-accent">
+              <div>
+                <span class="text-sm font-semibold text-gray-700 group-hover:text-primary block">Not yet</span>
+                <span class="text-xs text-gray-400">There's room to improve</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="fbComments" class="form-label">Additional Comments</label>
+          <textarea id="fbComments" name="comments" class="form-textarea" rows="3" placeholder="Anything else you'd like to share with us?"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg w-full sm:w-auto">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+          Submit Feedback
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Why Feedback Matters -->
+  <section class="section bg-light" aria-labelledby="why-heading">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="reveal">
+          <span class="section-label">We're Listening</span>
+          <h2 id="why-heading" class="section-title">Why Your Feedback Matters</h2>
+          <p class="text-gray-500 mb-6">At Zurihub Technology, continuous improvement isn't just a buzzword — it's how we operate. Every piece of feedback goes directly to our project leads and helps shape better processes, stronger communication, and higher-quality deliverables.</p>
+          <div class="space-y-5">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <div>
+                <p class="font-semibold text-primary text-sm">Shapes Our Services</p>
+                <p class="text-sm text-gray-500">Your insights directly influence how we design, develop, and deliver our solutions. Real feedback creates real improvements.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <div>
+                <p class="font-semibold text-primary text-sm">Empowers Our Team</p>
+                <p class="text-sm text-gray-500">Positive feedback motivates our team, while constructive criticism helps us identify specific areas for growth and training.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              </div>
+              <div>
+                <p class="font-semibold text-primary text-sm">Drives Innovation</p>
+                <p class="text-sm text-gray-500">Some of our best features and processes were born from client suggestions. Your voice can spark the next breakthrough.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-white rounded-card border border-gray-200 p-6 text-center">
+              <div class="text-3xl font-extrabold text-accent mb-1" data-count="98" data-suffix="%">0%</div>
+              <p class="text-xs text-gray-500 font-medium">Client Satisfaction Rate</p>
+            </div>
+            <div class="bg-white rounded-card border border-gray-200 p-6 text-center">
+              <div class="text-3xl font-extrabold text-accent mb-1" data-count="4" data-suffix=".9">0</div>
+              <p class="text-xs text-gray-500 font-medium">Average Rating</p>
+            </div>
+            <div class="bg-white rounded-card border border-gray-200 p-6 text-center">
+              <div class="text-3xl font-extrabold text-accent mb-1" data-count="100" data-suffix="+">0</div>
+              <p class="text-xs text-gray-500 font-medium">Projects Completed</p>
+            </div>
+            <div class="bg-white rounded-card border border-gray-200 p-6 text-center">
+              <div class="text-3xl font-extrabold text-accent mb-1" data-count="93" data-suffix="%">0%</div>
+              <p class="text-xs text-gray-500 font-medium">Would Recommend Us</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="cta-section-placeholder"></div>
+  <div id="footer-placeholder"></div>
+  <div id="sticky-cta-placeholder"></div>
+  <div id="whatsapp-placeholder"></div>
+  <div id="back-to-top-placeholder"></div>
+  <div id="exit-popup-placeholder"></div>
+  <script src="/js/components.js"></script>
+  <script>initComponents('feedback');</script>
+  <script src="/js/main.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var starContainer = document.getElementById('starRating');
+    var ratingInput = document.getElementById('ratingValue');
+    var ratingText = document.getElementById('ratingText');
+    var currentRating = 0;
+    var labels = ['', 'Poor', 'Fair', 'Good', 'Very Good', 'Excellent'];
+
+    if (!starContainer) return;
+
+    var stars = starContainer.querySelectorAll('.star-btn');
+
+    function updateStars(value, isHover) {
+      stars.forEach(function(star) {
+        var sv = parseInt(star.dataset.value);
+        var icon = star.querySelector('.star-icon');
+        if (sv <= value) {
+          icon.classList.remove('text-gray-300');
+          icon.classList.add('text-yellow-400');
+        } else {
+          icon.classList.remove('text-yellow-400');
+          icon.classList.add('text-gray-300');
+        }
+      });
+      if (!isHover) {
+        ratingInput.value = value;
+        ratingText.textContent = value > 0 ? value + '/5 — ' + labels[value] : 'Select a rating';
+        ratingText.classList.toggle('text-accent', value > 0);
+        ratingText.classList.toggle('text-gray-400', value === 0);
+      }
+    }
+
+    stars.forEach(function(star) {
+      star.addEventListener('click', function() {
+        currentRating = parseInt(this.dataset.value);
+        updateStars(currentRating, false);
+      });
+      star.addEventListener('mouseenter', function() {
+        updateStars(parseInt(this.dataset.value), true);
+      });
+    });
+
+    starContainer.addEventListener('mouseleave', function() {
+      updateStars(currentRating, false);
+    });
+  });
+  </script>
+</body>
+</html>

@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- ===== HOMEPAGE ===== -->
+  <url>
+    <loc>https://zurihub.co.ke/</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://zurihub.co.ke/assets/Image%20of%20a%20man%20holding%20a%20laptop-no%20bg.png</image:loc>
+      <image:title>Zurihub Technology - Web Development Company &amp; Software Solutions</image:title>
+      <image:caption>Professional web development and custom software solutions by Zurihub Technology</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://zurihub.co.ke/assets/zurihub_technology_logo_no_bg.png</image:loc>
+      <image:title>Zurihub Technology Logo</image:title>
+    </image:image>
+  </url>
+
+  <!-- ===== CORE PAGES ===== -->
+  <url>
+    <loc>https://zurihub.co.ke/about</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zurihub.co.ke/assets/coding.jpg</image:loc>
+      <image:title>Zurihub Technology Team - Web Development Experts</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/mission-vision</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/testimonials</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/faq</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/getting-started</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/portfolio</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://zurihub.co.ke/assets/Zuri%20CRM%20Dashboard.png</image:loc>
+      <image:title>Zuri Real Estate CRM System Portfolio - Zurihub Technology</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://zurihub.co.ke/assets/POS%20view%20portfolio%20image.png</image:loc>
+      <image:title>Zuri Wines POS System Portfolio - Zurihub Technology</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://zurihub.co.ke/assets/Gatwan%20view.png</image:loc>
+      <image:title>Gatwan Transport Logistics Website - Zurihub Technology Portfolio</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://zurihub.co.ke/assets/Elegant%20Kaya%20small%20home%20view.png</image:loc>
+      <image:title>Elegant Kaya Luxury Villa Booking Platform - Zurihub Technology Portfolio</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://zurihub.co.ke/assets/zuri-wallet-front-end.png</image:loc>
+      <image:title>ZuriHub Digital Wallet Fintech Platform Portfolio</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/contact</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/quotation</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/career</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/feedback</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/privacy-policy</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/terms-and-conditions</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/pricing</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- ===== LOCATION SEO PAGES - KENYA ===== -->
+  <url>
+    <loc>https://zurihub.co.ke/web-development-kenya</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/web-development-nairobi</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/web-development-mombasa</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/web-development-nakuru</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/web-development-eldoret</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/web-development-ruiru</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/seo-services-nairobi</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/software-development-kenya</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/ecommerce-development-kenya</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- ===== LOCATION SEO PAGES - INTERNATIONAL ===== -->
+  <url>
+    <loc>https://zurihub.co.ke/web-development-usa</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- ===== SERVICES HUB ===== -->
+  <url>
+    <loc>https://zurihub.co.ke/services</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- ===== WEB SERVICES ===== -->
+  <url>
+    <loc>https://zurihub.co.ke/web-development</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zurihub.co.ke/assets/Web%20Development%20companies%20in%20Nairobi.jpg</image:loc>
+      <image:title>Professional Web Development Company - Zurihub Technology</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/ecommerce-development</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://zurihub.co.ke/assets/Online%20shopping.webp</image:loc>
+      <image:title>Ecommerce Website Development Services - Zurihub Technology</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/shopify-development</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/wordpress-development</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/website-maintenance</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ===== DIGITAL MARKETING ===== -->
+  <url>
+    <loc>https://zurihub.co.ke/seo-services</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zurihub.co.ke/assets/seo-services-in-kenya-320x240.jpeg</image:loc>
+      <image:title>SEO Services - Search Engine Optimization - Zurihub Technology</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/digital-marketing</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- ===== SOFTWARE DEVELOPMENT ===== -->
+  <url>
+    <loc>https://zurihub.co.ke/software-development</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zurihub.co.ke/assets/software-in-kenya.jpeg</image:loc>
+      <image:title>Custom Software Development Services - Zurihub Technology</image:title>
+    </image:image>
+  </url>
+
+  <!-- ===== SYSTEM PAGES ===== -->
+  <url>
+    <loc>https://zurihub.co.ke/crm-system</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://zurihub.co.ke/assets/crm-software-kenya-320x240.jpg</image:loc>
+      <image:title>CRM System Development - Customer Relationship Management Software</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/pos-system</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://zurihub.co.ke/assets/pos-systems-in-kenya-today-320x240.png</image:loc>
+      <image:title>POS System Development - Point of Sale Software</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/erp-system</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://zurihub.co.ke/assets/erp-system-320x240.jpg</image:loc>
+      <image:title>ERP System Development - Enterprise Resource Planning Solutions</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/lms-system</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zurihub.co.ke/assets/lms-dashboard-320x240.jpg</image:loc>
+      <image:title>LMS Learning Management System Development</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/gate-management-system</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zurihub.co.ke/assets/Security%20Management%20System%20view%20Dashboard.png</image:loc>
+      <image:title>Gate Management System - Access Control Software</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/property-management-system</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/banking-loan-system</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/hotel-restaurant-system</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zurihub.co.ke/assets/Restaurant%20POS%20systems.png</image:loc>
+      <image:title>Hotel and Restaurant Management System - Zurihub Technology</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/supermarket-pos-system</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/manufacturing-management-system</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/law-firm-crm</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/real-estate-crm</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://zurihub.co.ke/assets/Zuri%20CRM%20Dashboard.png</image:loc>
+      <image:title>Real Estate CRM System - Property Sales Management Software</image:title>
+    </image:image>
+  </url>
+
+  <!-- ===== BLOG INDEX ===== -->
+  <url>
+    <loc>https://zurihub.co.ke/blog</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- ===== BLOG POSTS ===== -->
+  <url>
+    <loc>https://zurihub.co.ke/blog/what-is-seo</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zurihub.co.ke/assets/seo-services-in-kenya-320x240.jpeg</image:loc>
+      <image:title>What Is SEO and Why Does Your Business Need It?</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/blog/how-crm-systems-improve-operations</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zurihub.co.ke/assets/crm-software-kenya-320x240.jpg</image:loc>
+      <image:title>How CRM Systems Improve Business Operations</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/blog/erp-benefits-for-business</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://zurihub.co.ke/assets/erp-system-320x240.jpg</image:loc>
+      <image:title>ERP Benefits for Business</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/blog/pos-importance-retail-business</loc>
+    <lastmod>2026-02-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://zurihub.co.ke/assets/pos-systems-in-kenya-today-320x240.png</image:loc>
+      <image:title>POS Systems Importance for Retail Business</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/blog/ecommerce-guide</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zurihub.co.ke/assets/Online%20shopping.webp</image:loc>
+      <image:title>Complete Ecommerce Guide - How to Sell Online</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/blog/shopify-vs-custom-website</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/blog/digital-marketing-strategy</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/blog/website-maintenance-importance</loc>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/blog/custom-software-development-explained</loc>
+    <lastmod>2026-01-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/blog/ai-business-automation</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/blog/technical-seo-guide</loc>
+    <lastmod>2026-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/blog/how-to-choose-web-development-company</loc>
+    <lastmod>2026-01-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://zurihub.co.ke/assets/Web%20Development%20companies%20in%20Nairobi.jpg</image:loc>
+      <image:title>How to Choose the Right Web Development Company</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/blog/cost-of-software-development</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://zurihub.co.ke/blog/signs-business-needs-crm</loc>
+    <lastmod>2026-01-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://zurihub.co.ke/assets/crm-software-kenya-320x240.jpg</image:loc>
+      <image:title>10 Signs Your Business Needs a CRM System</image:title>
+    </image:image>
+  </url>
+
+  <!-- High-Authority Long-Form Blogs (Feb 2026) -->
+  <url>
+    <loc>https://zurihub.co.ke/blog/ultimate-guide-choosing-web-development-company</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://zurihub.co.ke/blog/custom-software-development-cost-guide</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://zurihub.co.ke/blog/crm-systems-guide</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://zurihub.co.ke/blog/erp-systems-guide</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://zurihub.co.ke/blog/ecommerce-development-guide</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://zurihub.co.ke/blog/pos-systems-guide</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://zurihub.co.ke/blog/ai-business-automation-guide</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://zurihub.co.ke/blog/website-maintenance-guide</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://zurihub.co.ke/blog/digital-transformation-strategy</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+</urlset>

@@ -1,0 +1,38 @@
+{
+  "name": "Zurihub Technology",
+  "short_name": "Zurihub",
+  "description": "Leading web development company offering custom software, SEO, CRM, POS, ERP systems and digital marketing solutions.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#101F4C",
+  "theme_color": "#101F4C",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["business", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/assets/zurihub-logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/zurihub-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/assets/Image of a man holding a laptop-no bg.png",
+      "sizes": "500x560",
+      "type": "image/png",
+      "label": "Zurihub Technology Homepage"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

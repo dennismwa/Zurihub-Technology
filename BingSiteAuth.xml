@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<users>
+  <!-- 
+    BING WEBMASTER TOOLS VERIFICATION
+    ===================================
+    1. Go to: https://www.bing.com/webmasters
+    2. Sign in with your Microsoft account
+    3. Add your site: https://zurihub.co.ke
+    4. Choose "XML file" verification method
+    5. Copy your unique verification code from Bing
+    6. Replace "REPLACE_WITH_YOUR_BING_VERIFY_CODE" below with your actual code
+    7. Upload this file to your root domain
+    8. Click "Verify" in Bing Webmaster Tools
+    
+    After verifying, submit your sitemap:
+    https://zurihub.co.ke/sitemap_index.xml
+  -->
+  <user>REPLACE_WITH_YOUR_BING_VERIFY_CODE</user>
+</users>

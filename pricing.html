@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing - Web Development & Software Solutions | Zurihub Technology</title>
+  <meta name="description" content="Transparent pricing for web development, software solutions, CRM, ERP, POS systems. Get affordable custom solutions with flexible payment options. Request a quote today.">
+  <meta name="keywords" content="web development pricing Kenya, software development cost, CRM system price, ERP pricing, POS system cost, affordable web design, custom software quote">
+  
+  <!-- Canonical -->
+  <link rel="canonical" href="https://zurihub.co.ke/pricing">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Pricing - Zurihub Technology">
+  <meta property="og:description" content="Transparent pricing for web development, software solutions, and digital services. Get affordable custom solutions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zurihub.co.ke/pricing">
+  <meta property="og:image" content="https://zurihub.co.ke/assets/zurihub-og-pricing.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/assets/zurihub-logo.png">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: { 50:'#f0f9f4', 100:'#dcf0e4', 200:'#bce1cc', 300:'#8fcaab', 400:'#5eac84', 500:'#3d9268', 600:'#2d7553', 700:'#265e44', 800:'#224b39', 900:'#1d3f30' },
+            brand: { dark:'#101F4C', navy:'#1a2f5a' },
+            accent: '#F97316'
+          },
+          fontFamily: { sans: ['Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  
+  <link rel="stylesheet" href="/css/styles.css">
+  
+  <style>
+    .pricing-card {
+      background: #fff;
+      border-radius: 16px;
+      border: 1px solid #E8ECF2;
+      padding: 32px;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    .pricing-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(16,31,76,0.08);
+    }
+    .pricing-card.popular {
+      border: 2px solid #101F4C;
+      transform: scale(1.02);
+    }
+    .pricing-card.popular:hover {
+      transform: scale(1.02) translateY(-4px);
+    }
+    .popular-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #101F4C;
+      color: #fff;
+      padding: 4px 16px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .price-original {
+      text-decoration: line-through;
+      color: #9CA3AF;
+    }
+    .feature-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 8px 0;
+      font-size: 14px;
+      color: #4B5563;
+    }
+    .feature-list li svg {
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .category-tab {
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+    .category-tab:hover {
+      background: #f3f4f6;
+    }
+    .category-tab.active {
+      background: #101F4C;
+      color: #fff;
+    }
+    .trust-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background: #f8f9fa;
+      border-radius: 100px;
+      font-size: 13px;
+      color: #4B5563;
+    }
+    .trust-badge svg {
+      color: #F97316;
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+  
+  <!-- Header injected by JS -->
+  <div id="site-header"></div>
+  
+  <!-- Hero Section -->
+  <section class="pt-32 pb-16 bg-gradient-to-br from-brand-dark via-brand-navy to-brand-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="inline-block px-4 py-2 bg-white/10 rounded-full text-sm text-white/80 mb-6">
+        Transparent Pricing
+      </span>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+        Small Investment,<br>
+        <span class="text-accent">Huge Business Boost</span>
+      </h1>
+      <p class="text-lg text-white/70 max-w-2xl mx-auto mb-8">
+        Choose the perfect package for your business needs. All plans include premium support and quality assurance.
+      </p>
+      
+      <!-- Trust Badges -->
+      <div class="flex flex-wrap justify-center gap-4 mt-8">
+        <div class="trust-badge bg-white/10 text-white/80">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+          </svg>
+          No Hidden Fees
+        </div>
+        <div class="trust-badge bg-white/10 text-white/80">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          On-Time Delivery
+        </div>
+        <div class="trust-badge bg-white/10 text-white/80">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+          </svg>
+          Quality Guaranteed
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Category Tabs -->
+  <section class="py-8 bg-white border-b border-gray-100 sticky top-[80px] z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex gap-2 overflow-x-auto pb-2 scrollbar-hide" id="category-tabs">
+        <button class="category-tab active" data-category="all">All Services</button>
+        <button class="category-tab" data-category="web">Web Development</button>
+        <button class="category-tab" data-category="ecommerce">E-commerce</button>
+        <button class="category-tab" data-category="software">Software & Systems</button>
+        <button class="category-tab" data-category="marketing">Digital Marketing</button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Pricing Grid -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Web Development Section -->
+      <div class="pricing-section mb-16" data-category="web">
+        <div class="text-center mb-10">
+          <span class="text-sm font-semibold text-primary-600 uppercase tracking-wider">Web Development</span>
+          <h2 class="text-3xl font-bold text-gray-900 mt-2">Website Packages</h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Basic -->
+          <div class="pricing-card">
+            <div class="mb-6">
+              <h3 class="text-xl font-bold text-gray-900">Basic Website</h3>
+              <p class="text-gray-500 text-sm mt-1">Perfect for small businesses</p>
+            </div>
+            <div class="mb-6">
+              <div class="flex items-baseline gap-2">
+                <span class="text-4xl font-bold text-gray-900">KSh 20,000</span>
+                <span class="price-original text-lg">KSh 30,000</span>
+              </div>
+              <p class="text-sm text-gray-500 mt-1">One-time payment</p>
+            </div>
+            <ul class="feature-list mb-8">
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Up to 5 Pages</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Mobile Responsive</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Contact Form</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Basic SEO Setup</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> 1 Month Support</li>
+            </ul>
+            <a href="/quotation?package=basic-website" class="block w-full py-3 text-center border-2 border-brand-dark text-brand-dark font-semibold rounded-lg hover:bg-brand-dark hover:text-white transition-colors">
+              Get Started
+            </a>
+          </div>
+          
+          <!-- Business (Popular) -->
+          <div class="pricing-card popular">
+            <span class="popular-badge">MOST POPULAR</span>
+            <div class="mb-6 pt-2">
+              <h3 class="text-xl font-bold text-gray-900">Business Website</h3>
+              <p class="text-gray-500 text-sm mt-1">For growing businesses</p>
+            </div>
+            <div class="mb-6">
+              <div class="flex items-baseline gap-2">
+                <span class="text-4xl font-bold text-gray-900">KSh 45,000</span>
+                <span class="price-original text-lg">KSh 60,000</span>
+              </div>
+              <p class="text-sm text-gray-500 mt-1">One-time payment</p>
+            </div>
+            <ul class="feature-list mb-8">
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Up to 10 Pages</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Mobile Responsive</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Blog Integration</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Advanced SEO</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Social Media Integration</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> 3 Months Support</li>
+            </ul>
+            <a href="/quotation?package=business-website" class="block w-full py-3 text-center bg-brand-dark text-white font-semibold rounded-lg hover:bg-brand-navy transition-colors">
+              Get Started
+            </a>
+          </div>
+          
+          <!-- Premium -->
+          <div class="pricing-card">
+            <div class="mb-6">
+              <h3 class="text-xl font-bold text-gray-900">Premium Website</h3>
+              <p class="text-gray-500 text-sm mt-1">Full-featured corporate site</p>
+            </div>
+            <div class="mb-6">
+              <div class="flex items-baseline gap-2">
+                <span class="text-4xl font-bold text-gray-900">KSh 85,000</span>
+                <span class="price-original text-lg">KSh 120,000</span>
+              </div>
+              <p class="text-sm text-gray-500 mt-1">One-time payment</p>
+            </div>
+            <ul class="feature-list mb-8">
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Unlimited Pages</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Custom Design</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> CMS Integration</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> E-commerce Ready</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Priority Support</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> 6 Months Support</li>
+            </ul>
+            <a href="/quotation?package=premium-website" class="block w-full py-3 text-center border-2 border-brand-dark text-brand-dark font-semibold rounded-lg hover:bg-brand-dark hover:text-white transition-colors">
+              Get Started
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- E-commerce Section -->
+      <div class="pricing-section mb-16" data-category="ecommerce">
+        <div class="text-center mb-10">
+          <span class="text-sm font-semibold text-primary-600 uppercase tracking-wider">E-commerce</span>
+          <h2 class="text-3xl font-bold text-gray-900 mt-2">Online Store Packages</h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Starter Store -->
+          <div class="pricing-card">
+            <div class="mb-6">
+              <h3 class="text-xl font-bold text-gray-900">Starter Store</h3>
+              <p class="text-gray-500 text-sm mt-1">Start selling online</p>
+            </div>
+            <div class="mb-6">
+              <div class="flex items-baseline gap-2">
+                <span class="text-4xl font-bold text-gray-900">KSh 55,000</span>
+                <span class="price-original text-lg">KSh 75,000</span>
+              </div>
+            </div>
+            <ul class="feature-list mb-8">
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Up to 50 Products</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> M-Pesa Integration</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Order Management</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> 3 Months Support</li>
+            </ul>
+            <a href="/quotation?package=starter-store" class="block w-full py-3 text-center border-2 border-brand-dark text-brand-dark font-semibold rounded-lg hover:bg-brand-dark hover:text-white transition-colors">
+              Get Started
+            </a>
+          </div>
+          
+          <!-- Business Store -->
+          <div class="pricing-card popular">
+            <span class="popular-badge">MOST POPULAR</span>
+            <div class="mb-6 pt-2">
+              <h3 class="text-xl font-bold text-gray-900">Business Store</h3>
+              <p class="text-gray-500 text-sm mt-1">For serious e-commerce</p>
+            </div>
+            <div class="mb-6">
+              <div class="flex items-baseline gap-2">
+                <span class="text-4xl font-bold text-gray-900">KSh 95,000</span>
+                <span class="price-original text-lg">KSh 130,000</span>
+              </div>
+            </div>
+            <ul class="feature-list mb-8">
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Up to 500 Products</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Multiple Payment Gateways</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Inventory Management</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Analytics Dashboard</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> 6 Months Support</li>
+            </ul>
+            <a href="/quotation?package=business-store" class="block w-full py-3 text-center bg-brand-dark text-white font-semibold rounded-lg hover:bg-brand-navy transition-colors">
+              Get Started
+            </a>
+          </div>
+          
+          <!-- Enterprise Store -->
+          <div class="pricing-card">
+            <div class="mb-6">
+              <h3 class="text-xl font-bold text-gray-900">Enterprise Store</h3>
+              <p class="text-gray-500 text-sm mt-1">Full e-commerce solution</p>
+            </div>
+            <div class="mb-6">
+              <div class="flex items-baseline gap-2">
+                <span class="text-4xl font-bold text-gray-900">KSh 180,000</span>
+                <span class="price-original text-lg">KSh 250,000</span>
+              </div>
+            </div>
+            <ul class="feature-list mb-8">
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Unlimited Products</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Multi-vendor Support</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Advanced Inventory</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Dedicated Manager</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> 1 Year Support</li>
+            </ul>
+            <a href="/quotation?package=enterprise-store" class="block w-full py-3 text-center border-2 border-brand-dark text-brand-dark font-semibold rounded-lg hover:bg-brand-dark hover:text-white transition-colors">
+              Get Started
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Software Systems Section -->
+      <div class="pricing-section mb-16" data-category="software">
+        <div class="text-center mb-10">
+          <span class="text-sm font-semibold text-primary-600 uppercase tracking-wider">Software & Systems</span>
+          <h2 class="text-3xl font-bold text-gray-900 mt-2">CRM, ERP & POS Systems</h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- CRM -->
+          <div class="pricing-card">
+            <div class="mb-6">
+              <h3 class="text-xl font-bold text-gray-900">CRM System</h3>
+              <p class="text-gray-500 text-sm mt-1">Customer management</p>
+            </div>
+            <div class="mb-6">
+              <span class="text-3xl font-bold text-gray-900">From KSh 60,000</span>
+            </div>
+            <ul class="feature-list mb-8">
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Contact Management</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Lead Tracking</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Sales Pipeline</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Email Integration</li>
+            </ul>
+            <a href="/quotation?service=crm-system" class="block w-full py-3 text-center border-2 border-brand-dark text-brand-dark font-semibold rounded-lg hover:bg-brand-dark hover:text-white transition-colors">
+              Request Quote
+            </a>
+          </div>
+          
+          <!-- POS -->
+          <div class="pricing-card">
+            <div class="mb-6">
+              <h3 class="text-xl font-bold text-gray-900">POS System</h3>
+              <p class="text-gray-500 text-sm mt-1">Point of sale solution</p>
+            </div>
+            <div class="mb-6">
+              <span class="text-3xl font-bold text-gray-900">From KSh 25,000</span>
+            </div>
+            <ul class="feature-list mb-8">
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Sales Processing</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Inventory Management</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Receipt Printing</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Reports & Analytics</li>
+            </ul>
+            <a href="/quotation?service=pos-system" class="block w-full py-3 text-center border-2 border-brand-dark text-brand-dark font-semibold rounded-lg hover:bg-brand-dark hover:text-white transition-colors">
+              Request Quote
+            </a>
+          </div>
+          
+          <!-- ERP -->
+          <div class="pricing-card">
+            <div class="mb-6">
+              <h3 class="text-xl font-bold text-gray-900">ERP System</h3>
+              <p class="text-gray-500 text-sm mt-1">Enterprise solution</p>
+            </div>
+            <div class="mb-6">
+              <span class="text-3xl font-bold text-gray-900">From KSh 150,000</span>
+            </div>
+            <ul class="feature-list mb-8">
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Finance Module</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> HR Management</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Supply Chain</li>
+              <li><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Custom Modules</li>
+            </ul>
+            <a href="/quotation?service=erp-system" class="block w-full py-3 text-center border-2 border-brand-dark text-brand-dark font-semibold rounded-lg hover:bg-brand-dark hover:text-white transition-colors">
+              Request Quote
+            </a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  
+  <!-- Custom Quote CTA -->
+  <section class="py-16 bg-brand-dark">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold text-white mb-4">Need a Custom Solution?</h2>
+      <p class="text-lg text-white/70 mb-8">
+        Don't see exactly what you need? We create custom solutions tailored to your specific business requirements.
+      </p>
+      <a href="/quotation" class="inline-flex items-center gap-2 bg-accent hover:bg-orange-600 text-white font-semibold px-8 py-4 rounded-lg transition-colors">
+        Request Custom Quote
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+  
+  <!-- FAQ Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900">Frequently Asked Questions</h2>
+      </div>
+      
+      <div class="space-y-4">
+        <details class="bg-white rounded-xl border border-gray-200 p-6 cursor-pointer group">
+          <summary class="font-semibold text-gray-900 flex justify-between items-center">
+            What payment methods do you accept?
+            <svg class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </summary>
+          <p class="text-gray-600 mt-4">We accept M-Pesa, bank transfers, and international payments via PayPal or wire transfer. We offer flexible payment plans - typically 50% deposit to start, and 50% upon completion.</p>
+        </details>
+        
+        <details class="bg-white rounded-xl border border-gray-200 p-6 cursor-pointer group">
+          <summary class="font-semibold text-gray-900 flex justify-between items-center">
+            How long does a typical project take?
+            <svg class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </summary>
+          <p class="text-gray-600 mt-4">Basic websites: 1-2 weeks. Business websites: 2-4 weeks. E-commerce: 3-6 weeks. Custom software: 4-12 weeks depending on complexity. We provide detailed timelines during the quotation process.</p>
+        </details>
+        
+        <details class="bg-white rounded-xl border border-gray-200 p-6 cursor-pointer group">
+          <summary class="font-semibold text-gray-900 flex justify-between items-center">
+            What are your typical price ranges?
+            <svg class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </summary>
+          <p class="text-gray-600 mt-4">Simple corporate websites start from KES 20,000; complex ecommerce and custom web apps from KES 50,000 to KES 300,000+. Ecommerce from KES 30,000 (negotiable); custom integrations KES 80,000–150,000+. Basic CRM or POS from KES 60,000 and KES 25,000 respectively; enterprise ERP from KES 150,000 to KES 700,000+. WordPress from KES 17,000; Shopify setup from KES 20,000. All prices are indicative — we provide detailed quotes after understanding your needs.</p>
+        </details>
+        
+        <details class="bg-white rounded-xl border border-gray-200 p-6 cursor-pointer group">
+          <summary class="font-semibold text-gray-900 flex justify-between items-center">
+            Do you provide ongoing support?
+            <svg class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </summary>
+          <p class="text-gray-600 mt-4">Yes! All packages include a support period. After that, we offer affordable maintenance packages starting from KSh 5,000/month for basic support, with options for more comprehensive coverage.</p>
+        </details>
+        
+        <details class="bg-white rounded-xl border border-gray-200 p-6 cursor-pointer group">
+          <summary class="font-semibold text-gray-900 flex justify-between items-center">
+            Can I upgrade my package later?
+            <svg class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </summary>
+          <p class="text-gray-600 mt-4">Absolutely! Our solutions are built to scale. You can start with a basic package and add features or upgrade to a higher tier as your business grows. We design with future expansion in mind.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer injected by JS -->
+  <div id="site-footer"></div>
+  
+  <script src="/js/components.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/seo.js"></script>
+  
+  <script>
+    // Category filtering
+    document.querySelectorAll('.category-tab').forEach(tab => {
+      tab.addEventListener('click', function() {
+        document.querySelectorAll('.category-tab').forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+        
+        const category = this.dataset.category;
+        
+        document.querySelectorAll('.pricing-section').forEach(section => {
+          if (category === 'all' || section.dataset.category === category) {
+            section.style.display = 'block';
+          } else {
+            section.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

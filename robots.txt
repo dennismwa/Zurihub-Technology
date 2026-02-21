@@ -1,0 +1,115 @@
+# ====================================================
+# Zurihub Technology — robots.txt
+# https://zurihub.co.ke
+# Last updated: 2026-02-20
+# ====================================================
+
+# Allow ALL search engine crawlers
+User-agent: *
+Allow: /
+Disallow: /cdn-cgi/
+Disallow: /wp-admin/
+Crawl-delay: 0
+
+# Google — no delay, full access
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Google Images — allow full assets
+User-agent: Googlebot-Image
+Allow: /assets/
+Allow: /
+
+# Google Mobile
+User-agent: Googlebot-Mobile
+Allow: /
+Crawl-delay: 0
+
+# Google AdsBot
+User-agent: AdsBot-Google
+Allow: /
+
+# Google Smartphone
+User-agent: AdsBot-Google-Mobile
+Allow: /
+
+# Bing / Microsoft
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: MSNBot
+Allow: /
+
+# Yahoo
+User-agent: Slurp
+Allow: /
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# Yandex (Russia)
+User-agent: YandexBot
+Allow: /
+
+# Baidu (China)
+User-agent: Baiduspider
+Allow: /
+
+# Applebot (Apple)
+User-agent: Applebot
+Allow: /
+
+# Social Crawlers (Open Graph / Rich Previews)
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+User-agent: Discordbot
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+# Schema validation crawlers
+User-agent: Screaming Frog SEO Spider
+Allow: /
+
+# Block bad bots
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+# ====================================================
+# SITEMAPS — submit these to Google & Bing
+# ====================================================
+Sitemap: https://zurihub.co.ke/sitemap_index.xml
+Sitemap: https://zurihub.co.ke/sitemap.xml
+Sitemap: https://zurihub.co.ke/news-sitemap.xml
+
+# Canonical host
+Host: https://zurihub.co.ke

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Testimonials & Reviews | Zurihub Technology - Real Results, Real Businesses</title>
+  <meta name="description" content="Read real testimonials from 100+ satisfied clients of Zurihub Technology. Discover how our web development, software systems, SEO, and digital marketing services transformed their businesses.">
+  <link rel="canonical" href="https://zurihub.co.ke/testimonials">
+  <link rel="icon" type="image/png" href="/assets/zurihub-logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zurihub.co.ke/testimonials">
+  <meta property="og:title" content="Client Testimonials & Reviews | Zurihub Technology">
+  <meta property="og:description" content="100+ satisfied clients share their experiences with Zurihub Technology's web development, software, and digital marketing services.">
+  <meta property="og:image" content="https://zurihub.co.ke/assets/zurihub-logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Client Testimonials & Reviews | Zurihub Technology">
+  <meta name="twitter:description" content="Real results from real businesses. See why 100+ clients trust Zurihub Technology.">
+  <meta name="twitter:image" content="https://zurihub.co.ke/assets/zurihub-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { primary: '#101F4C', 'primary-dark': '#0A1535', accent: '#FB5041', light: '#F8F9FC' }, fontFamily: { sans: ['Inter','system-ui','sans-serif'] }, borderRadius: { card: '8px', btn: '6px' } } }
+    }
+  </script>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://zurihub.co.ke/"},
+      {"@type": "ListItem", "position": 2, "name": "Testimonials", "item": "https://zurihub.co.ke/testimonials"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Zurihub Technology",
+    "url": "https://zurihub.co.ke",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "100",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "review": [
+      {"@type": "Review", "author": {"@type": "Person", "name": "Miss Kativa"}, "reviewRating": {"@type": "Rating", "ratingValue": "5"}, "reviewBody": "The website for my makeup and beauty business has elevated my online presence. It's visually appealing and user-friendly, a fantastic tool for attracting clients."},
+      {"@type": "Review", "author": {"@type": "Person", "name": "Joseph G"}, "reviewRating": {"@type": "Rating", "ratingValue": "5"}, "reviewBody": "After getting a new website for my spare parts auto shop, customer engagement has increased dramatically."},
+      {"@type": "Review", "author": {"@type": "Person", "name": "Mercy"}, "reviewRating": {"@type": "Rating", "ratingValue": "5"}, "reviewBody": "After implementing a custom POS and inventory management solution, everything runs smoothly."},
+      {"@type": "Review", "author": {"@type": "Person", "name": "Kea Simmons"}, "reviewRating": {"@type": "Rating", "ratingValue": "5"}, "reviewBody": "My travel and tour agency has seen remarkable growth thanks to the stunning website I received."}
+    ]
+  }
+  </script>
+  <style>
+    /* ===== TESTIMONIALS PAGE PREMIUM STYLES ===== */
+    .tpage-hero {
+      background: #0A1535;
+      padding: 7rem 0 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .tpage-hero::before {
+      content: '';
+      position: absolute;
+      top: -200px; right: -200px;
+      width: 600px; height: 600px;
+      border-radius: 50%;
+      background: rgba(251,80,65,0.06);
+      filter: blur(80px);
+    }
+
+    /* Stats bar */
+    .tstat { text-align:center; padding:1.5rem 2rem; border-right:1px solid rgba(255,255,255,0.08); }
+    .tstat:last-child { border-right:none; }
+    .tstat-num { font-size:2.25rem; font-weight:800; color:#fff; line-height:1; }
+    .tstat-label { font-size:0.875rem; color:rgba(255,255,255,0.45); margin-top:4px; }
+
+    /* Marquee rows */
+    .t-marquee-track { display:flex; width:max-content; gap:1.25rem; }
+    .t-marquee-track.go-left  { animation: tMarqLeft  38s linear infinite; }
+    .t-marquee-track.go-right { animation: tMarqRight 42s linear infinite; }
+    .t-marquee-wrap:hover .t-marquee-track { animation-play-state:paused; }
+    @keyframes tMarqLeft  { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+    @keyframes tMarqRight { from{transform:translateX(-50%)} to{transform:translateX(0)} }
+
+    /* Shared card style used everywhere */
+    .tc {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.09);
+      border-radius: 12px;
+      padding: 1.625rem 1.75rem;
+      width: 320px;
+      flex-shrink: 0;
+      transition: background 200ms ease, border-color 200ms ease, transform 200ms ease;
+      cursor: default;
+    }
+    .tc:hover {
+      background: rgba(255,255,255,0.09);
+      border-color: rgba(251,80,65,0.4);
+      transform: translateY(-4px);
+    }
+    .tc-tag { display:inline-block; padding:0.2rem 0.625rem; background:rgba(251,80,65,0.12); color:#FB5041; font-size:0.6875rem; font-weight:700; border-radius:4px; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.875rem; }
+    .tc-stars { display:flex; gap:3px; margin-bottom:0.875rem; }
+    .tc-star { color:#FB5041; font-size:0.9rem; }
+    .tc-quote { color:rgba(255,255,255,0.72); font-size:0.9375rem; line-height:1.7; margin-bottom:1.25rem; font-style:italic; }
+    .tc-divider { height:1px; background:rgba(255,255,255,0.08); margin-bottom:1.125rem; }
+    .tc-avatar { width:42px; height:42px; border-radius:50%; object-fit:cover; border:2px solid rgba(251,80,65,0.5); flex-shrink:0; }
+    .tc-name { color:#fff; font-weight:700; font-size:0.9375rem; display:flex; align-items:center; gap:6px; }
+    .tc-badge { display:inline-flex; align-items:center; justify-content:center; width:16px; height:16px; background:#FB5041; border-radius:50%; flex-shrink:0; }
+    .tc-badge svg { width:9px; height:9px; color:#fff; }
+    .tc-role { color:rgba(255,255,255,0.45); font-size:0.8125rem; margin-top:2px; }
+
+    /* Grid section cards */
+    .tg-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.09);
+      border-radius: 12px;
+      padding: 2rem;
+      transition: all 200ms ease;
+    }
+    .tg-card:hover {
+      background: rgba(255,255,255,0.08);
+      border-color: rgba(251,80,65,0.35);
+      transform: translateY(-4px);
+    }
+    .tg-card.featured {
+      background: rgba(251,80,65,0.08);
+      border-color: rgba(251,80,65,0.25);
+    }
+    .tg-quote-mark {
+      font-size: 5rem;
+      color: rgba(251,80,65,0.2);
+      font-family: Georgia, serif;
+      line-height: 1;
+      margin-bottom: -1rem;
+    }
+
+    /* CTA box */
+    .t-cta-box {
+      background: rgba(251,80,65,0.08);
+      border: 1px solid rgba(251,80,65,0.2);
+      border-radius: 16px;
+      padding: 3rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <!-- ===== HERO ===== -->
+  <section class="tpage-hero" aria-labelledby="tpage-h1">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <nav class="breadcrumb mb-6" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="separator mx-2">/</span><span class="current">Testimonials</span>
+      </nav>
+      <div class="max-w-3xl">
+        <span class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest mb-5" style="color:#FB5041">
+          <span style="display:inline-block;width:24px;height:2px;background:#FB5041"></span>
+          Client Stories
+        </span>
+        <h1 id="tpage-h1" class="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-5">Real Results From<br><span style="color:#FB5041">Real Businesses</span></h1>
+        <p class="text-white/60 text-lg max-w-2xl leading-relaxed">Over 100 businesses across multiple industries have transformed their digital presence, automated operations, and grown revenue with Zurihub Technology. Here are their stories.</p>
+      </div>
+
+      <!-- Stats row -->
+      <div class="mt-12 inline-flex flex-wrap rounded-xl overflow-hidden" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08)">
+        <div class="tstat"><div class="tstat-num">100+</div><div class="tstat-label">Happy Clients</div></div>
+        <div class="tstat"><div class="tstat-num">35+</div><div class="tstat-label">Premium Projects</div></div>
+        <div class="tstat"><div class="tstat-num">5.0</div><div class="tstat-label">Average Rating</div></div>
+        <div class="tstat"><div class="tstat-num">99%</div><div class="tstat-label">Satisfaction Rate</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE ROWS ===== -->
+  <section style="background:#0A1535;padding:3rem 0 4rem;overflow:hidden" aria-label="Auto-scrolling testimonials">
+
+    <!-- Row 1 — scroll left -->
+    <div class="t-marquee-wrap mb-5">
+      <div class="t-marquee-track go-left">
+        <div class="tc"><span class="tc-tag">Web Development</span><div class="tc-stars"><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span></div><p class="tc-quote">"The website elevated my online presence completely. It's visually stunning, user-friendly, and drives real client bookings every week without fail."</p><div class="tc-divider"></div><div style="display:flex;align-items:center;gap:10px"><img src="/assets/No user image.jpg" alt="" class="tc-avatar" loading="lazy"><div><div class="tc-name">Miss Kativa <span class="tc-badge"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div><div class="tc-role">CEO, Kativa Makeup</div></div></div></div>
+        <div class="tc"><span class="tc-tag">SEO Services</span><div class="tc-stars"><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span></div><p class="tc-quote">"Customer engagement increased dramatically after the SEO optimization. Organic traffic now accounts for most of our new inquiries each month."</p><div class="tc-divider"></div><div style="display:flex;align-items:center;gap:10px"><img src="/assets/No user image.jpg" alt="" class="tc-avatar" loading="lazy"><div><div class="tc-name">Joseph G <span class="tc-badge"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div><div class="tc-role">Founder, Safari Motors Autoshop</div></div></div></div>
+        <div class="tc"><span class="tc-tag">POS System</span><div class="tc-stars"><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span></div><p class="tc-quote">"After implementing the custom POS system, every process runs smoothly. Our inventory losses dropped by 80% and checkout time halved."</p><div class="tc-divider"></div><div style="display:flex;align-items:center;gap:10px"><img src="/assets/No user image.jpg" alt="" class="tc-avatar" loading="lazy"><div><div class="tc-name">Mercy <span class="tc-badge"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div><div class="tc-role">Director, Sweetcorn Ltd</div></div></div></div>
+        <div class="tc"><span class="tc-tag">Travel Website</span><div class="tc-stars"><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span></div><p class="tc-quote">"My travel agency has seen remarkable growth. The website captures our brand perfectly and converts visitors into bookings with impressive consistency."</p><div class="tc-divider"></div><div style="display:flex;align-items:center;gap:10px"><img src="/assets/No user image.jpg" alt="" class="tc-avatar" loading="lazy"><div><div class="tc-name">Kea Simmons <span class="tc-badge"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div><div class="tc-role">CEO, Traverze Culture</div></div></div></div>
+        <div class="tc"><span class="tc-tag">Real Estate CRM</span><div class="tc-stars"><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span></div><p class="tc-quote">"The CRM transformed how we manage leads. We close 40% more deals per month with full pipeline visibility and automated client follow-ups."</p><div class="tc-divider"></div><div style="display:flex;align-items:center;gap:10px"><img src="/assets/No user image.jpg" alt="" class="tc-avatar" loading="lazy"><div><div class="tc-name">Patrick Ochieng <span class="tc-badge"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div><div class="tc-role">MD, Neoway Properties</div></div></div></div>
+        <div class="tc"><span class="tc-tag">ERP System</span><div class="tc-stars"><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span></div><p class="tc-quote">"A custom ERP that unified all our manufacturing operations. Production, inventory, HR — all in one place. A complete game-changer for us."</p><div class="tc-divider"></div><div style="display:flex;align-items:center;gap:10px"><img src="/assets/No user image.jpg" alt="" class="tc-avatar" loading="lazy"><div><div class="tc-name">Sarah Wambui <span class="tc-badge"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div><div class="tc-role">CEO, Precision Manufacturing</div></div></div></div>
+        <!-- duplicates -->
+        <div class="tc"><span class="tc-tag">Web Development</span><div class="tc-stars"><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span></div><p class="tc-quote">"The website elevated my online presence completely. It's visually stunning, user-friendly, and drives real client bookings every week without fail."</p><div class="tc-divider"></div><div style="display:flex;align-items:center;gap:10px"><img src="/assets/No user image.jpg" alt="" class="tc-avatar" loading="lazy"><div><div class="tc-name">Miss Kativa <span class="tc-badge"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div><div class="tc-role">CEO, Kativa Makeup</div></div></div></div>
+        <div class="tc"><span class="tc-tag">SEO Services</span><div class="tc-stars"><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span></div><p class="tc-quote">"Customer engagement increased dramatically after the SEO optimization. Organic traffic now accounts for most of our new inquiries each month."</p><div class="tc-divider"></div><div style="display:flex;align-items:center;gap:10px"><img src="/assets/No user image.jpg" alt="" class="tc-avatar" loading="lazy"><div><div class="tc-name">Joseph G <span class="tc-badge"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div><div class="tc-role">Founder, Safari Motors Autoshop</div></div></div></div>
+        <div class="tc"><span class="tc-tag">POS System</span><div class="tc-stars"><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span></div><p class="tc-quote">"After implementing the custom POS system, every process runs smoothly. Our inventory losses dropped by 80% and checkout time halved."</p><div class="tc-divider"></div><div style="display:flex;align-items:center;gap:10px"><img src="/assets/No user image.jpg" alt="" class="tc-avatar" loading="lazy"><div><div class="tc-name">Mercy <span class="tc-badge"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div><div class="tc-role">Director, Sweetcorn Ltd</div></div></div></div>
+        <div class="tc"><span class="tc-tag">Travel Website</span><div class="tc-stars"><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span></div><p class="tc-quote">"My travel agency has seen remarkable growth. The website captures our brand perfectly and converts visitors into bookings with impressive consistency."</p><div class="tc-divider"></div><div style="display:flex;align-items:center;gap:10px"><img src="/assets/No user image.jpg" alt="" class="tc-avatar" loading="lazy"><div><div class="tc-name">Kea Simmons <span class="tc-badge"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div><div class="tc-role">CEO, Traverze Culture</div></div></div></div>
+        <div class="tc"><span class="tc-tag">Real Estate CRM</span><div class="tc-stars"><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span></div><p class="tc-quote">"The CRM transformed how we manage leads. We close 40% more deals per month with full pipeline visibility and automated client follow-ups."</p><div class="tc-divider"></div><div style="display:flex;align-items:center;gap:10px"><img src="/assets/No user image.jpg" alt="" class="tc-avatar" loading="lazy"><div><div class="tc-name">Patrick Ochieng <span class="tc-badge"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div><div class="tc-role">MD, Neoway Properties</div></div></div></div>
+        <div class="tc"><span class="tc-tag">ERP System</span><div class="tc-stars"><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span></div><p class="tc-quote">"A custom ERP that unified all our manufacturing operations. Production, inventory, HR — all in one place. A complete game-changer for us."</p><div class="tc-divider"></div><div style="display:flex;align-items:center;gap:10px"><img src="/assets/No user image.jpg" alt="" class="tc-avatar" loading="lazy"><div><div class="tc-name">Sarah Wambui <span class="tc-badge"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div><div class="tc-role">CEO, Precision Manufacturing</div></div></div></div>
+      </div>
+    </div>
+
+    <!-- Row 2 — scroll right -->
+    <div class="t-marquee-wrap">
+      <div class="t-marquee-track go-right">
+        <div class="tc"><span class="tc-tag">Digital Marketing</span><div class="tc-stars"><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span></div><p class="tc-quote">"Social media presence grew by 300%. Leads from Instagram and Facebook now account for 60% of our new business. Exceptional digital marketing team."</p><div class="tc-divider"></div><div style="display:flex;align-items:center;gap:10px"><img src="/assets/No user image.jpg" alt="" class="tc-avatar" loading="lazy"><div><div class="tc-name">Grace Njeri <span class="tc-badge"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div><div class="tc-role">Owner, Savanna Kitchen</div></div></div></div>
+        <div class="tc"><span class="tc-tag">Ecommerce</span><div class="tc-stars"><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span></div><p class="tc-quote">"Handles hundreds of orders daily without a hitch. The WhatsApp integration and M-Pesa payment system are seamless. Revenue doubled within 3 months."</p><div class="tc-divider"></div><div style="display:flex;align-items:center;gap:10px"><img src="/assets/No user image.jpg" alt="" class="tc-avatar" loading="lazy"><div><div class="tc-name">Brian Kamau <span class="tc-badge"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div><div class="tc-role">Founder, Modern Auto Parts</div></div></div></div>
+        <div class="tc"><span class="tc-tag">Law Firm CRM</span><div class="tc-stars"><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span></div><p class="tc-quote">"Cases, deadlines, and client communications now in one place. Our team is significantly more productive and client satisfaction scores have improved notably."</p><div class="tc-divider"></div><div style="display:flex;align-items:center;gap:10px"><img src="/assets/No user image.jpg" alt="" class="tc-avatar" loading="lazy"><div><div class="tc-name">David Kamau <span class="tc-badge"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div><div class="tc-role">Partner, Kamau & Associates</div></div></div></div>
+        <div class="tc"><span class="tc-tag">Corporate Website</span><div class="tc-stars"><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span></div><p class="tc-quote">"Professional, on-time, and the final result exceeded all our expectations. Our corporate site now reflects the premium brand we have worked hard to build."</p><div class="tc-divider"></div><div style="display:flex;align-items:center;gap:10px"><img src="/assets/No user image.jpg" alt="" class="tc-avatar" loading="lazy"><div><div class="tc-name">Amina Hassan <span class="tc-badge"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div><div class="tc-role">CEO, Halisi Investments</div></div></div></div>
+        <div class="tc"><span class="tc-tag">Hotel Management</span><div class="tc-stars"><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span></div><p class="tc-quote">"Bookings, housekeeping, and billing automated in one dashboard. Admin time cut by 70% and guest satisfaction scores are the best they've ever been."</p><div class="tc-divider"></div><div style="display:flex;align-items:center;gap:10px"><img src="/assets/No user image.jpg" alt="" class="tc-avatar" loading="lazy"><div><div class="tc-name">James Otieno <span class="tc-badge"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div><div class="tc-role">GM, Serene Resort & Spa</div></div></div></div>
+        <div class="tc"><span class="tc-tag">WordPress Website</span><div class="tc-stars"><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span></div><p class="tc-quote">"A beautiful WordPress site that I manage myself with ease. The SEO is thorough — I'm already ranking on the first page for all my target keywords."</p><div class="tc-divider"></div><div style="display:flex;align-items:center;gap:10px"><img src="/assets/No user image.jpg" alt="" class="tc-avatar" loading="lazy"><div><div class="tc-name">Njeri Wairimu <span class="tc-badge"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div><div class="tc-role">Director, Bloom Interiors</div></div></div></div>
+        <!-- duplicates -->
+        <div class="tc"><span class="tc-tag">Digital Marketing</span><div class="tc-stars"><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span></div><p class="tc-quote">"Social media presence grew by 300%. Leads from Instagram and Facebook now account for 60% of our new business. Exceptional digital marketing team."</p><div class="tc-divider"></div><div style="display:flex;align-items:center;gap:10px"><img src="/assets/No user image.jpg" alt="" class="tc-avatar" loading="lazy"><div><div class="tc-name">Grace Njeri <span class="tc-badge"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div><div class="tc-role">Owner, Savanna Kitchen</div></div></div></div>
+        <div class="tc"><span class="tc-tag">Ecommerce</span><div class="tc-stars"><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span></div><p class="tc-quote">"Handles hundreds of orders daily without a hitch. The WhatsApp integration and M-Pesa payment system are seamless. Revenue doubled within 3 months."</p><div class="tc-divider"></div><div style="display:flex;align-items:center;gap:10px"><img src="/assets/No user image.jpg" alt="" class="tc-avatar" loading="lazy"><div><div class="tc-name">Brian Kamau <span class="tc-badge"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div><div class="tc-role">Founder, Modern Auto Parts</div></div></div></div>
+        <div class="tc"><span class="tc-tag">Law Firm CRM</span><div class="tc-stars"><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span></div><p class="tc-quote">"Cases, deadlines, and client communications now in one place. Our team is significantly more productive and client satisfaction scores have improved notably."</p><div class="tc-divider"></div><div style="display:flex;align-items:center;gap:10px"><img src="/assets/No user image.jpg" alt="" class="tc-avatar" loading="lazy"><div><div class="tc-name">David Kamau <span class="tc-badge"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div><div class="tc-role">Partner, Kamau & Associates</div></div></div></div>
+        <div class="tc"><span class="tc-tag">Corporate Website</span><div class="tc-stars"><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span></div><p class="tc-quote">"Professional, on-time, and the final result exceeded all our expectations. Our corporate site now reflects the premium brand we have worked hard to build."</p><div class="tc-divider"></div><div style="display:flex;align-items:center;gap:10px"><img src="/assets/No user image.jpg" alt="" class="tc-avatar" loading="lazy"><div><div class="tc-name">Amina Hassan <span class="tc-badge"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div><div class="tc-role">CEO, Halisi Investments</div></div></div></div>
+        <div class="tc"><span class="tc-tag">Hotel Management</span><div class="tc-stars"><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span></div><p class="tc-quote">"Bookings, housekeeping, and billing automated in one dashboard. Admin time cut by 70% and guest satisfaction scores are the best they've ever been."</p><div class="tc-divider"></div><div style="display:flex;align-items:center;gap:10px"><img src="/assets/No user image.jpg" alt="" class="tc-avatar" loading="lazy"><div><div class="tc-name">James Otieno <span class="tc-badge"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div><div class="tc-role">GM, Serene Resort & Spa</div></div></div></div>
+        <div class="tc"><span class="tc-tag">WordPress Website</span><div class="tc-stars"><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span><span class="tc-star">★</span></div><p class="tc-quote">"A beautiful WordPress site that I manage myself with ease. The SEO is thorough — I'm already ranking on the first page for all my target keywords."</p><div class="tc-divider"></div><div style="display:flex;align-items:center;gap:10px"><img src="/assets/No user image.jpg" alt="" class="tc-avatar" loading="lazy"><div><div class="tc-name">Njeri Wairimu <span class="tc-badge"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div><div class="tc-role">Director, Bloom Interiors</div></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED + GRID SECTION ===== -->
+  <section style="background:#101F4C;padding:5rem 0">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <span class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest mb-4" style="color:#FB5041"><span style="width:24px;height:2px;background:#FB5041;display:inline-block"></span>In-Depth Stories</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-white">Transformations That Speak Volumes</h2>
+      </div>
+
+      <!-- Featured Testimonial — full width -->
+      <div class="tg-card featured mb-8 reveal" style="max-width:none">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <span style="display:inline-block;padding:0.3rem 0.9rem;background:rgba(251,80,65,0.15);color:#FB5041;font-size:0.75rem;font-weight:700;border-radius:4px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:1.25rem">Featured Story — Real Estate CRM</span>
+            <div class="tg-quote-mark">"</div>
+            <p style="color:rgba(255,255,255,0.85);font-size:1.125rem;line-height:1.8;font-style:italic;margin-bottom:1.5rem">"Before Zurihub built our CRM, we were managing 200+ leads in WhatsApp groups and Excel sheets. We were losing deals every week simply because of poor follow-up. Now every lead is tracked, every follow-up is automated, and every team member has full visibility into our pipeline. We closed 43% more plots in our first quarter with the system. I'd recommend Zurihub to any real estate company serious about growth."</p>
+            <div class="flex items-center gap-4">
+              <div style="display:flex;gap:3px;margin-bottom:6px">
+                <span style="color:#FB5041;font-size:1rem">★★★★★</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px;margin-top:8px">
+              <img src="/assets/No user image.jpg" alt="Patrick Ochieng - Neoway Properties" style="width:52px;height:52px;border-radius:50%;object-fit:cover;border:2px solid rgba(251,80,65,0.5)" loading="lazy">
+              <div>
+                <div style="color:#fff;font-weight:700;font-size:1rem;display:flex;align-items:center;gap:6px">Patrick Ochieng <span style="display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;background:#FB5041;border-radius:50%;"><svg style="width:10px;height:10px;color:#fff" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div>
+                <div style="color:rgba(255,255,255,0.45);font-size:0.8125rem">Managing Director, Neoway Properties</div>
+              </div>
+            </div>
+          </div>
+          <div style="background:rgba(255,255,255,0.04);border-radius:12px;padding:2rem;border:1px solid rgba(255,255,255,0.07)">
+            <h3 style="color:#fff;font-weight:700;font-size:1rem;margin-bottom:1.25rem">Results Achieved</h3>
+            <div style="space-y:0.75rem">
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:0.625rem 0;border-bottom:1px solid rgba(255,255,255,0.07)">
+                <span style="color:rgba(255,255,255,0.6);font-size:0.9rem">Deals closed (Q1 improvement)</span>
+                <span style="color:#FB5041;font-weight:800;font-size:1rem">+43%</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:0.625rem 0;border-bottom:1px solid rgba(255,255,255,0.07)">
+                <span style="color:rgba(255,255,255,0.6);font-size:0.9rem">Lead follow-up rate</span>
+                <span style="color:#FB5041;font-weight:800;font-size:1rem">98%</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:0.625rem 0;border-bottom:1px solid rgba(255,255,255,0.07)">
+                <span style="color:rgba(255,255,255,0.6);font-size:0.9rem">Admin time saved/week</span>
+                <span style="color:#FB5041;font-weight:800;font-size:1rem">18 hrs</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:0.625rem 0">
+                <span style="color:rgba(255,255,255,0.6);font-size:0.9rem">Team satisfaction</span>
+                <span style="color:#FB5041;font-weight:800;font-size:1rem">★★★★★</span>
+              </div>
+            </div>
+            <a href="/real-estate-crm" style="display:inline-flex;align-items:center;gap:6px;margin-top:1.5rem;color:#FB5041;font-weight:600;font-size:0.875rem;text-decoration:none">Learn about our Real Estate CRM <svg style="width:14px;height:14px" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Masonry Grid — 3 columns -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="tg-card reveal">
+          <div class="tg-quote-mark">"</div>
+          <span style="display:inline-block;padding:0.2rem 0.625rem;background:rgba(251,80,65,0.12);color:#FB5041;font-size:0.6875rem;font-weight:700;border-radius:4px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.875rem">POS System</span>
+          <div style="display:flex;gap:3px;margin-bottom:0.875rem"><span style="color:#FB5041">★★★★★</span></div>
+          <p style="color:rgba(255,255,255,0.72);font-size:0.9375rem;line-height:1.7;margin-bottom:1.25rem;font-style:italic">"Our supermarket operates 3 branches. Before the Zurihub POS, reconciling daily sales took 3 hours per branch. Now it's automated. Real-time inventory sync across all branches has eliminated stockouts completely."</p>
+          <div style="height:1px;background:rgba(255,255,255,0.08);margin-bottom:1.125rem"></div>
+          <div style="display:flex;align-items:center;gap:10px"><img src="/assets/No user image.jpg" alt="" style="width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid rgba(251,80,65,0.5)" loading="lazy"><div><div style="color:#fff;font-weight:700;font-size:0.9rem;display:flex;align-items:center;gap:5px">John Mwenda <span style="display:inline-flex;align-items:center;justify-content:center;width:15px;height:15px;background:#FB5041;border-radius:50%;"><svg style="width:8px;height:8px;color:#fff" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div><div style="color:rgba(255,255,255,0.45);font-size:0.8125rem">Owner, FreshMart Supermarkets</div></div></div>
+        </div>
+
+        <div class="tg-card reveal">
+          <div class="tg-quote-mark">"</div>
+          <span style="display:inline-block;padding:0.2rem 0.625rem;background:rgba(251,80,65,0.12);color:#FB5041;font-size:0.6875rem;font-weight:700;border-radius:4px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.875rem">Digital Marketing</span>
+          <div style="display:flex;gap:3px;margin-bottom:0.875rem"><span style="color:#FB5041">★★★★★</span></div>
+          <p style="color:rgba(255,255,255,0.72);font-size:0.9375rem;line-height:1.7;margin-bottom:1.25rem;font-style:italic">"Our social media presence grew by 300% in 6 months. The content strategy they created is professional and consistent. We get more qualified inquiries from digital than from all other channels combined."</p>
+          <div style="height:1px;background:rgba(255,255,255,0.08);margin-bottom:1.125rem"></div>
+          <div style="display:flex;align-items:center;gap:10px"><img src="/assets/No user image.jpg" alt="" style="width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid rgba(251,80,65,0.5)" loading="lazy"><div><div style="color:#fff;font-weight:700;font-size:0.9rem;display:flex;align-items:center;gap:5px">Grace Njeri <span style="display:inline-flex;align-items:center;justify-content:center;width:15px;height:15px;background:#FB5041;border-radius:50%;"><svg style="width:8px;height:8px;color:#fff" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div><div style="color:rgba(255,255,255,0.45);font-size:0.8125rem">Owner, Savanna Kitchen Restaurant</div></div></div>
+        </div>
+
+        <div class="tg-card reveal">
+          <div class="tg-quote-mark">"</div>
+          <span style="display:inline-block;padding:0.2rem 0.625rem;background:rgba(251,80,65,0.12);color:#FB5041;font-size:0.6875rem;font-weight:700;border-radius:4px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.875rem">Ecommerce Website</span>
+          <div style="display:flex;gap:3px;margin-bottom:0.875rem"><span style="color:#FB5041">★★★★★</span></div>
+          <p style="color:rgba(255,255,255,0.72);font-size:0.9375rem;line-height:1.7;margin-bottom:1.25rem;font-style:italic">"The ecommerce platform handles hundreds of daily orders seamlessly. The WhatsApp integration and M-Pesa payment processing work flawlessly. Our online revenue doubled within 3 months of launch."</p>
+          <div style="height:1px;background:rgba(255,255,255,0.08);margin-bottom:1.125rem"></div>
+          <div style="display:flex;align-items:center;gap:10px"><img src="/assets/No user image.jpg" alt="" style="width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid rgba(251,80,65,0.5)" loading="lazy"><div><div style="color:#fff;font-weight:700;font-size:0.9rem;display:flex;align-items:center;gap:5px">Brian Kamau <span style="display:inline-flex;align-items:center;justify-content:center;width:15px;height:15px;background:#FB5041;border-radius:50%;"><svg style="width:8px;height:8px;color:#fff" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div><div style="color:rgba(255,255,255,0.45);font-size:0.8125rem">Founder, Modern Auto & Accessories</div></div></div>
+        </div>
+
+        <div class="tg-card reveal">
+          <div class="tg-quote-mark">"</div>
+          <span style="display:inline-block;padding:0.2rem 0.625rem;background:rgba(251,80,65,0.12);color:#FB5041;font-size:0.6875rem;font-weight:700;border-radius:4px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.875rem">Law Firm CRM</span>
+          <div style="display:flex;gap:3px;margin-bottom:0.875rem"><span style="color:#FB5041">★★★★★</span></div>
+          <p style="color:rgba(255,255,255,0.72);font-size:0.9375rem;line-height:1.7;margin-bottom:1.25rem;font-style:italic">"Every case, document, deadline, and client communication is now centralized. We haven't missed a court deadline since implementation. Client satisfaction ratings have climbed to their highest ever."</p>
+          <div style="height:1px;background:rgba(255,255,255,0.08);margin-bottom:1.125rem"></div>
+          <div style="display:flex;align-items:center;gap:10px"><img src="/assets/No user image.jpg" alt="" style="width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid rgba(251,80,65,0.5)" loading="lazy"><div><div style="color:#fff;font-weight:700;font-size:0.9rem;display:flex;align-items:center;gap:5px">David Kamau <span style="display:inline-flex;align-items:center;justify-content:center;width:15px;height:15px;background:#FB5041;border-radius:50%;"><svg style="width:8px;height:8px;color:#fff" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div><div style="color:rgba(255,255,255,0.45);font-size:0.8125rem">Senior Partner, Kamau & Associates</div></div></div>
+        </div>
+
+        <div class="tg-card reveal">
+          <div class="tg-quote-mark">"</div>
+          <span style="display:inline-block;padding:0.2rem 0.625rem;background:rgba(251,80,65,0.12);color:#FB5041;font-size:0.6875rem;font-weight:700;border-radius:4px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.875rem">Hotel Management System</span>
+          <div style="display:flex;gap:3px;margin-bottom:0.875rem"><span style="color:#FB5041">★★★★★</span></div>
+          <p style="color:rgba(255,255,255,0.72);font-size:0.9375rem;line-height:1.7;margin-bottom:1.25rem;font-style:italic">"Bookings, housekeeping assignments, and billing all automated in one dashboard. We cut admin overhead by 70% and our TripAdvisor rating improved from 3.8 to 4.6 after implementing the system."</p>
+          <div style="height:1px;background:rgba(255,255,255,0.08);margin-bottom:1.125rem"></div>
+          <div style="display:flex;align-items:center;gap:10px"><img src="/assets/No user image.jpg" alt="" style="width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid rgba(251,80,65,0.5)" loading="lazy"><div><div style="color:#fff;font-weight:700;font-size:0.9rem;display:flex;align-items:center;gap:5px">James Otieno <span style="display:inline-flex;align-items:center;justify-content:center;width:15px;height:15px;background:#FB5041;border-radius:50%;"><svg style="width:8px;height:8px;color:#fff" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div><div style="color:rgba(255,255,255,0.45);font-size:0.8125rem">General Manager, Serene Resort</div></div></div>
+        </div>
+
+        <div class="tg-card reveal">
+          <div class="tg-quote-mark">"</div>
+          <span style="display:inline-block;padding:0.2rem 0.625rem;background:rgba(251,80,65,0.12);color:#FB5041;font-size:0.6875rem;font-weight:700;border-radius:4px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.875rem">ERP Manufacturing</span>
+          <div style="display:flex;gap:3px;margin-bottom:0.875rem"><span style="color:#FB5041">★★★★★</span></div>
+          <p style="color:rgba(255,255,255,0.72);font-size:0.9375rem;line-height:1.7;margin-bottom:1.25rem;font-style:italic">"Production planning, raw material procurement, quality control, and HR — all unified in a single system. We reduced production delays by 60% and wastage by 35%. The ROI on this system has been extraordinary."</p>
+          <div style="height:1px;background:rgba(255,255,255,0.08);margin-bottom:1.125rem"></div>
+          <div style="display:flex;align-items:center;gap:10px"><img src="/assets/No user image.jpg" alt="" style="width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid rgba(251,80,65,0.5)" loading="lazy"><div><div style="color:#fff;font-weight:700;font-size:0.9rem;display:flex;align-items:center;gap:5px">Sarah Wambui <span style="display:inline-flex;align-items:center;justify-content:center;width:15px;height:15px;background:#FB5041;border-radius:50%;"><svg style="width:8px;height:8px;color:#fff" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span></div><div style="color:rgba(255,255,255,0.45);font-size:0.8125rem">CEO, Precision Manufacturing Ltd</div></div></div>
+        </div>
+      </div>
+
+      <!-- CTA Box -->
+      <div class="t-cta-box mt-16 reveal">
+        <svg class="w-12 h-12 mx-auto mb-4" style="color:#FB5041" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+        <h3 class="text-2xl font-extrabold text-white mb-3">Be Our Next Success Story</h3>
+        <p class="text-white/50 max-w-lg mx-auto mb-8">Join 100+ businesses that have transformed their operations and grown their revenue with Zurihub Technology.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/quotation" class="btn btn-primary btn-lg">Start Your Project</a>
+          <a href="/contact" class="btn btn-outline btn-lg" style="border-color:rgba(255,255,255,0.25);color:#fff">Talk to Us First</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="cta-section-placeholder"></div>
+  <div id="footer-placeholder"></div>
+  <div id="sticky-cta-placeholder"></div>
+  <div id="whatsapp-placeholder"></div>
+  <div id="back-to-top-placeholder"></div>
+  <div id="exit-popup-placeholder"></div>
+  <script src="/js/components.js"></script>
+  <script>initComponents('testimonials');</script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
