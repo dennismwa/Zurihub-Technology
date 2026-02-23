@@ -324,23 +324,17 @@
     /* === DECORATIVE BLOBS === */
     .blob { position:absolute; border-radius:50%; filter:blur(80px); pointer-events:none; }
 
-    /* === HERO === */
+    /* === HERO (same gradient as about section, sleek light look) === */
     #hero {
-      background:#101F4C;
-      background-image: linear-gradient(180deg, rgba(16,31,76,0.88) 0%, rgba(16,31,76,0.78) 50%, rgba(10,21,53,0.92) 100%),
-        url(/assets/close-up-view-computer-screen-showing-lines-code-multiple-blurred-monitors-workspace.jpeg);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
+      background: linear-gradient(to right, #fdf2f8 0%, #fce7f3 18%, #f5f0ff 28%, #f0fdf4 42%, #f7fee7 55%, #fefce8 68%, #f8fafc 82%, #f9fafb 100%);
       min-height:100vh;
       display:flex;
       align-items:center;
       position:relative;
       overflow:hidden;
     }
-    .hero-blob-1 { width:600px; height:600px; background:rgba(251,80,65,0.09); top:-150px; right:-100px; }
-    .hero-blob-2 { width:400px; height:400px; background:rgba(255,255,255,0.03); bottom:-100px; left:-50px; }
-    .hero-dot-grid { position:absolute; inset:0; background-image:radial-gradient(circle,rgba(255,255,255,0.06) 1px,transparent 0); background-size:36px 36px; }
+    .hero-blob-1, .hero-blob-2 { display:none; }
+    .hero-dot-grid { display:none; }
 
     /* Hero floating badges */
     .hero-badge {
@@ -355,6 +349,21 @@
       animation: floatY 5s ease-in-out infinite;
     }
     .hero-badge-2 { animation-delay:2.5s; }
+    .hero-right-col { padding-left: 2rem; }
+    @media (min-width: 1280px) { .hero-right-col { padding-left: 3rem; } }
+    @media (min-width: 1536px) { .hero-right-col { padding-left: 4rem; } }
+    .hero-right-img {
+      image-rendering: -webkit-optimize-contrast;
+      backface-visibility: hidden;
+      transform: translateZ(0) scale(1.08);
+      transform-origin: center center;
+    }
+    @media (min-width: 1280px) {
+      .hero-right-img { transform: translateZ(0) scale(1.12); }
+    }
+    @media (min-width: 1536px) {
+      .hero-right-img { transform: translateZ(0) scale(1.16); }
+    }
     @keyframes floatY { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
 
     /* === LOGOS STRIP === */
@@ -439,8 +448,24 @@
       .stat-value { font-size: 2rem; }
     }
 
-    /* === ABOUT === */
+    /* === ABOUT (background colors match Background Color Choice.png) === */
+    #about-preview {
+      background: linear-gradient(to right, #fdf2f8 0%, #fce7f3 18%, #f5f0ff 28%, #f0fdf4 42%, #f7fee7 55%, #fefce8 68%, #f8fafc 82%, #f9fafb 100%) !important;
+    }
     .about-img-wrap { position:relative; display:inline-block; }
+    .about-img-glow {
+      box-shadow:
+        0 0 0 1px rgba(255,255,255,0.95),
+        0 0 0 2px rgba(252,231,243,0.5),
+        0 0 24px rgba(252,231,243,0.35),
+        0 0 48px rgba(240,253,244,0.25),
+        0 0 72px rgba(247,254,231,0.2),
+        0 12px 40px rgba(16,31,76,0.12);
+    }
+    .about-img-glow img {
+      image-rendering: auto;
+      image-rendering: -webkit-optimize-contrast;
+    }
     .about-img-badge {
       position:absolute;
       bottom:-20px; right:-20px;
@@ -512,31 +537,40 @@
 
     /* === SYSTEMS SECTION === */
     #systems { background:#101F4C; position:relative; overflow:hidden; }
-    .sys-bg-pattern { position:absolute; inset:0; background-image:linear-gradient(rgba(255,255,255,0.025) 1px,transparent 1px), linear-gradient(90deg,rgba(255,255,255,0.025) 1px,transparent 1px); background-size:48px 48px; }
+    .sys-bg-pattern {
+      position:absolute; inset:0;
+      background-image:url(/assets/Someone%20coding%20image.jpg);
+      background-size:cover;
+      background-position:center;
+      opacity:0.1;
+      pointer-events:none;
+    }
     .sys-card {
-      background:rgba(255,255,255,0.05);
-      border:1px solid rgba(255,255,255,0.08);
+      background:#1e3262;
+      border:1.5px solid rgba(255,255,255,0.2);
       border-radius:14px;
       padding:1.5rem;
       transition:all 250ms ease;
       display:flex; flex-direction:column; gap:0.625rem;
       text-decoration:none;
+      box-shadow:0 4px 20px rgba(0,0,0,0.25);
     }
     .sys-card:hover {
-      background:rgba(255,255,255,0.09);
-      border-color:rgba(251,80,65,0.5);
+      background:#243d6d;
+      border-color:rgba(251,80,65,0.8);
+      border-width:2px;
       transform:translateY(-4px);
-      box-shadow:0 0 0 1px rgba(251,80,65,0.15), 0 12px 32px rgba(251,80,65,0.08);
+      box-shadow:0 0 0 1px rgba(251,80,65,0.3), 0 16px 40px rgba(0,0,0,0.3), 0 0 24px rgba(251,80,65,0.15);
     }
     .sys-card-icon {
       width:48px; height:48px; border-radius:12px;
-      background:rgba(251,80,65,0.12);
+      background:rgba(251,80,65,0.2);
       color:#FB5041;
       display:flex; align-items:center; justify-content:center;
       margin-bottom:0.25rem;
     }
-    .sys-card h3 { color:#fff; font-weight:700; font-size:0.9375rem; }
-    .sys-card p { color:rgba(255,255,255,0.5); font-size:0.8125rem; line-height:1.6; }
+    .sys-card h3 { color:#fff; font-weight:700; font-size:0.9375rem; text-shadow:0 1px 2px rgba(0,0,0,0.2); }
+    .sys-card p { color:rgba(255,255,255,0.88); font-size:0.8125rem; line-height:1.6; font-weight:500; text-shadow:0 1px 1px rgba(0,0,0,0.15); }
 
     /* === WHY CHOOSE US === */
     #why-us { background:#F4F6FB; }
@@ -691,16 +725,16 @@
 
         <!-- LEFT -->
         <div class="reveal-left">
-          <div class="inline-flex items-center gap-2 mb-7 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider" style="background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.95);border:1px solid rgba(255,255,255,0.2);backdrop-filter:blur(8px)">
+          <div class="inline-flex items-center gap-2 mb-7 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider" style="background:rgba(16,31,76,0.06);color:#101F4C;border:1px solid rgba(16,31,76,0.12)">
             <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
             Trusted by 100+ Businesses Worldwide
           </div>
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.35] tracking-normal">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.35] tracking-normal" style="color:#101F4C">
             Build Powerful<br>
             <span style="color:#FB5041">Digital Solutions</span><br>
             That Drive Growth
           </h1>
-          <p class="mt-6 text-lg leading-relaxed max-w-lg" style="color:rgba(255,255,255,0.65)">
+          <p class="mt-6 text-lg leading-relaxed max-w-lg" style="color:#6B7280">
             We design and develop high-performance websites, custom software systems, and SEO strategies that transform businesses and deliver measurable results.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 mt-9">
@@ -708,39 +742,40 @@
               Start Your Project
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
             </a>
-            <a href="/portfolio" class="btn btn-outline btn-lg">
+            <a href="/portfolio" class="btn btn-lg" style="border:2px solid #101F4C;color:#101F4C;background:transparent;border-radius:8px;padding:0.875rem 1.75rem;font-weight:700;text-decoration:none;transition:all 200ms" onmouseover="this.style.background='#101F4C';this.style.color='#fff'" onmouseout="this.style.background='transparent';this.style.color='#101F4C'">
               View Our Work
             </a>
           </div>
 
           <!-- Social proof row -->
-          <div class="flex items-center gap-5 mt-10 pt-8" style="border-top:1px solid rgba(255,255,255,0.08)">
+          <div class="flex items-center gap-5 mt-10 pt-8" style="border-top:1px solid rgba(16,31,76,0.12)">
             <div class="flex -space-x-3">
-              <img src="/assets/No user image.jpg" alt="Zurihub Technology satisfied client" class="w-10 h-10 rounded-full border-2 object-cover" style="border-color:rgba(255,255,255,0.15)">
-              <img src="/assets/No user image.jpg" alt="Zurihub Technology satisfied client" class="w-10 h-10 rounded-full border-2 object-cover" style="border-color:rgba(255,255,255,0.15)">
-              <img src="/assets/No user image.jpg" alt="Zurihub Technology satisfied client" class="w-10 h-10 rounded-full border-2 object-cover" style="border-color:rgba(255,255,255,0.15)">
-              <span class="w-10 h-10 rounded-full border-2 flex items-center justify-center text-xs font-bold text-white" style="background:#FB5041;border-color:rgba(255,255,255,0.15)">+97</span>
+              <img src="/assets/User%201.jpg" alt="Zurihub Technology satisfied client" class="w-10 h-10 rounded-full border-2 object-cover" style="border-color:rgba(16,31,76,0.15)">
+              <img src="/assets/User%201.1.jpg" alt="Zurihub Technology satisfied client" class="w-10 h-10 rounded-full border-2 object-cover" style="border-color:rgba(16,31,76,0.15)">
+              <img src="/assets/User%202.jpg" alt="Zurihub Technology satisfied client" class="w-10 h-10 rounded-full border-2 object-cover" style="border-color:rgba(16,31,76,0.15)">
+              <img src="/assets/User%203.jpg" alt="Zurihub Technology satisfied client" class="w-10 h-10 rounded-full border-2 object-cover" style="border-color:rgba(16,31,76,0.15)">
+              <span class="w-10 h-10 rounded-full border-2 flex items-center justify-center text-xs font-bold" style="background:#FB5041;color:#fff;border-color:rgba(16,31,76,0.15)">+97</span>
             </div>
             <div>
               <div class="flex gap-1 mb-1">
-                <span style="color:#FACC15;font-size:0.875rem">★★★★★</span>
+                <span style="color:#EAB308;font-size:0.875rem">★★★★★</span>
               </div>
-              <p class="text-xs font-medium" style="color:rgba(255,255,255,0.5)">Rated 5.0 by 100+ clients</p>
+              <p class="text-xs font-medium" style="color:#6B7280">Rated 5.0 by 20+ clients</p>
             </div>
           </div>
         </div>
 
-        <!-- RIGHT — image + floating badges -->
-        <div class="hidden lg:block relative" style="min-height:520px">
-          <!-- Decorative ring -->
-          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[460px] h-[460px] rounded-full" style="border:1px solid rgba(255,255,255,0.05)"></div>
-          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[380px] h-[380px] rounded-full" style="border:1px solid rgba(251,80,65,0.08)"></div>
+        <!-- RIGHT — image + floating badges (update hero image: change src below) -->
+        <div class="hidden lg:block relative overflow-visible hero-right-col" style="min-height:600px">
+          <!-- Decorative ring (sleek, light section) -->
+          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[540px] h-[520px] rounded-full" style="border:1px solid rgba(16,31,76,0.08)"></div>
+          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[480px] h-[480px] rounded-full" style="border:1px solid rgba(251,80,65,0.2)"></div>
 
-<img src="/assets/Image of a man holding a laptop-no bg.png"
+          <img src="/assets/Image_of_Ecommerce_Fashion_website__on_Different_Devices-removebg-preview.png"
              alt="Professional web developer building custom digital solutions for global businesses"
-             class="relative z-10 mx-auto"
-             style="max-height:520px;width:auto;filter:drop-shadow(0 24px 48px rgba(0,0,0,0.35))"
-             width="460" height="520" loading="eager">
+             class="relative z-10 mx-auto hero-right-img"
+             style="max-height:600px;width:auto;filter:drop-shadow(0 20px 40px rgba(16,31,76,0.12))"
+             width="520" height="600" loading="eager" decoding="async" fetchpriority="high">
 
           <!-- Floating badge 1 — Projects 
           <div class="hero-badge absolute z-20 reveal-right" style="top:60px;left:0">
@@ -859,17 +894,19 @@
   <!-- ==============================
       ABOUT PREVIEW
   =============================== -->
-  <section style="background:#fff;padding:6rem 0" id="about-preview">
+  <section style="padding:6rem 0" id="about-preview">
     <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid lg:grid-cols-2 gap-16 items-center">
 
-        <!-- Image side -->
+        <!-- Image side (glow around border per reference; image kept sharp) -->
         <div class="about-img-wrap reveal-left">
-          <div class="rounded-2xl overflow-hidden shadow-2xl" style="aspect-ratio:4/3">
-            <img src="/assets/coding.jpg"
+          <div class="rounded-2xl overflow-hidden shadow-2xl about-img-glow" style="aspect-ratio:4/3">
+            <img src="/assets/Zurihub Workspace with a laptop.jpg"
                 alt="Zurihub Technology team building innovative digital solutions for businesses worldwide"
                 class="w-full h-full object-cover"
-                width="580" height="435" loading="lazy">
+                width="580" height="495"
+                loading="lazy"
+                decoding="async">
           </div>
           <!-- Floating badge bottom-right -->
           <div class="about-img-badge">
@@ -881,11 +918,11 @@
               <div style="font-size:0.75rem;color:#9CA3AF;font-weight:500">Industry Experience</div>
             </div>
           </div>
-          <!-- Floating badge top-left -->
+          <!-- Floating badge top-left 
           <div class="about-img-badge-2">
             <div style="font-size:1.375rem;font-weight:900;color:#fff;line-height:1">100+</div>
             <div style="font-size:0.6875rem;color:rgba(255,255,255,0.65);font-weight:500;margin-top:2px">Happy Clients</div>
-          </div>
+          </div>-->
         </div>
 
         <!-- Content side -->
@@ -1093,10 +1130,10 @@
           </div>
         </div>
 
-        <!-- Center image -->
+        <!-- Center image (update "Why choose us" image: change src below) -->
         <div class="why-img-wrap reveal flex justify-center">
           <div class="rounded-2xl overflow-hidden shadow-2xl" style="max-width:340px">
-            <img src="/assets/Ecommerce Website view on laptop and mobile- No bg.png"
+            <img src="/assets/Image of a man holding a laptop-no bg.png"
                 alt="Why choose Zurihub Technology for web development and software solutions"
                 class="w-full object-cover"
                 width="340" height="400" loading="lazy">
